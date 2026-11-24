@@ -1,7 +1,7 @@
 # Replication package: SHAP-sign partitions as test cases for ML models
 
 Code, generated test suites and results of the paper *Advancing Machine Learning Software
-Testing with Interpretable Black-Box Techniques* (Cunha and Pombo), submitted to ACM TOSEM.
+Testing with Interpretable Black-Box Techniques* (Cunha and Pombo), submitted to Software Testing, Verification and Reliability (Wiley).
 
 The method derives per-feature equivalence partitions from the sign of SHAP values, delimits
 the uncertainty margin around each boundary with entropy (Algorithm 1 of the paper), uses
