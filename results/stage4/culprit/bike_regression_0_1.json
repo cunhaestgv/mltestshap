@@ -1,0 +1,17 @@
+{
+ "scenario": "bike",
+ "task": "regression",
+ "rep": 0,
+ "mult": 1.0,
+ "real": true,
+ "base": 0.03557758070528507,
+ "root": 38,
+ "shap_top": 38,
+ "rule": null,
+ "tried": {
+  "38": {
+   "disc_gain": -0.32651644058357143,
+   "test": 0.050223776449759804
+  }
+ }
+}

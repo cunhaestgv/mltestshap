@@ -1,0 +1,42 @@
+{
+ "scenario": "missing",
+ "rep": 1,
+ "expected": 5,
+ "row": 4,
+ "diagnosis": "complex interaction",
+ "correct": false,
+ "type": "wide",
+ "share_before": 0.9992857142857143,
+ "region_test": 1.0,
+ "err_all": 0.07615324256233798,
+ "local_err_before": 0.07615324256233798,
+ "scores": {
+  "lo": 3.077885776292533e-05,
+  "hi": 0.9999673366546631,
+  "shap_rel": 1.530958579600684,
+  "share": 0.9992857142857143,
+  "n_margin": 2798.0,
+  "density": 0.9992857371318933,
+  "entropy": 0.9933719662842238,
+  "agreement": 0.9772694781987136,
+  "self": 0.0,
+  "self_changes": 1.0,
+  "shallow": 0.24303073624017155,
+  "deep": 0.9045746962115797,
+  "err_ratio": 0.9991658329963684,
+  "resid_corr": 0.9668988926220571,
+  "partners": ""
+ },
+ "rows_all": {
+  "x1": 4,
+  "w": 4,
+  "x3": 1,
+  "x4": 1,
+  "x5": 1,
+  "x6": 4,
+  "x7": 7
+ },
+ "share_after": 0.9992857142857143,
+ "local_err_after": 0.023313087872163452,
+ "err_all_after": 0.023313087872163452
+}

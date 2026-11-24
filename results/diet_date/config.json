@@ -1,0 +1,18 @@
+{
+ "dataset": "diet_date",
+ "thetas": [
+  0.05,
+  0.1,
+  0.2
+ ],
+ "wide_frac": 0.1,
+ "k": 3,
+ "n_gen": 3000,
+ "n_bg": 100,
+ "n_obg": 30,
+ "healthy": 10,
+ "seeds": 3,
+ "seeds_data": 2,
+ "random_reps": 5,
+ "out": null
+}

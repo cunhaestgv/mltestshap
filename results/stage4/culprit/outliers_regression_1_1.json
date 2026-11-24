@@ -1,0 +1,17 @@
+{
+ "scenario": "outliers",
+ "task": "regression",
+ "rep": 1,
+ "mult": 1.0,
+ "real": false,
+ "base": 0.11054252099009118,
+ "root": 0,
+ "shap_top": 0,
+ "rule": null,
+ "tried": {
+  "0": {
+   "disc_gain": -1.0924157611540497,
+   "test": 0.24994887062443857
+  }
+ }
+}

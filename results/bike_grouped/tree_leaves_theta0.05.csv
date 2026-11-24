@@ -1,0 +1,41 @@
+feature,leaf,sign,entropy,samples,rule
+season,3,-1,0.0,929,season <= 0.1667 and cnt > 0.001569
+season,9,1,0.0,268,season > 0.1667 and hr <= 0.2391 and season > 0.5
+season,14,1,0.0,1187,season > 0.1667 and hr > 0.2391 and cnt > 0.1135
+yr,3,-1,0.0,91,yr <= 0.5 and hr <= 0.06522 and hr <= 0.02174
+yr,9,-1,0.0,1386,yr <= 0.5 and hr > 0.06522 and season <= 0.8333 and atemp <= 0.7803
+yr,13,-1,0.0,336,yr <= 0.5 and hr > 0.06522 and season > 0.8333 and cnt > 0.1062
+yr,16,1,0.0,53,yr > 0.5 and hr <= 0.06522 and cnt <= 0.034
+yr,19,1,0.0,704,yr > 0.5 and hr > 0.06522 and temp <= 0.6277
+yr,22,1,0.0,77,yr > 0.5 and hr > 0.06522 and temp > 0.6277 and temp > 0.6489
+mnth,5,-1,0.0,191,mnth <= 0.1364 and yr <= 0.5 and atemp <= 0.3257 and cnt > 0.01203
+mnth,27,-1,0.0,120,mnth > 0.1364 and mnth > 0.6818 and workingday <= 0.5 and mnth > 0.8636
+hr,7,-1,0.0,104,hr <= 0.8043 and hr <= 0.1522 and cnt > 0.01517 and hr <= 0.02174
+hr,19,-1,0.0,100,hr > 0.8043 and hr <= 0.8478 and cnt > 0.1355
+hr,20,-1,0.0,513,hr > 0.8043 and hr > 0.8478
+holiday,4,1,0.0,91,hr <= 0.3261 and workingday <= 0.5 and yr <= 0.5 and weekday <= 0.08333
+holiday,12,1,0.0,104,hr <= 0.3261 and workingday > 0.5 and hr <= 0.06522 and weekday > 0.4167
+holiday,25,1,0.0,92,hr > 0.3261 and hr > 0.8913 and workingday <= 0.5 and temp > 0.266
+weekday,12,-1,0.0,291,weekday <= 0.4167 and hr > 0.2391 and hr > 0.7609 and mnth <= 0.8636
+weekday,19,-1,0.0,56,weekday > 0.4167 and hr <= 0.06522 and cnt > 0.03347
+workingday,4,-1,0.0,39,workingday <= 0.5 and hr <= 0.2826 and hr <= 0.06522 and hr <= 0.02174
+workingday,12,-1,0.018285451152098547,581,workingday <= 0.5 and hr > 0.2826 and holiday <= 0.5 and hr > 0.3261
+workingday,20,1,0.0,511,workingday > 0.5 and hr <= 0.6739 and hr <= 0.3261 and hr > 0.06522
+workingday,25,1,0.0,673,workingday > 0.5 and hr > 0.6739 and cnt <= 0.6318
+weathersit,7,1,0.034280386319742936,558,weathersit <= 0.1667 and holiday <= 0.5 and hr > 0.06522 and cnt <= 0.0863
+weathersit,8,1,0.0,1145,weathersit <= 0.1667 and holiday <= 0.5 and hr > 0.06522 and cnt > 0.0863
+weathersit,15,-1,0.0,74,weathersit > 0.1667 and hr <= 0.3261 and weathersit > 0.5
+weathersit,19,-1,0.0,45,weathersit > 0.1667 and hr > 0.3261 and windspeed <= 0.1141 and yr > 0.5
+weathersit,22,-1,0.0,356,weathersit > 0.1667 and hr > 0.3261 and windspeed > 0.1141 and weekday > 0.4167
+temp,4,-1,0.0,174,temp <= 0.4574 and temp <= 0.3723 and hr <= 0.1957 and atemp <= 0.3106
+temp,6,-1,0.0,812,temp <= 0.4574 and temp <= 0.3723 and hr > 0.1957
+temp,20,1,0.0,40,temp > 0.4574 and atemp <= 0.4773 and hr > 0.7174 and windspeed <= 0.2105
+temp,27,1,0.0,532,temp > 0.4574 and atemp > 0.4773 and hr > 0.6304 and temp <= 0.8617
+atemp,4,-1,0.0,225,temp <= 0.4574 and hr <= 0.587 and temp <= 0.3723 and temp <= 0.2234
+atemp,9,-1,0.0,548,temp <= 0.4574 and hr > 0.587
+hum,7,1,0.0,177,hum <= 0.635 and hum <= 0.565 and hr > 0.587 and hum <= 0.345
+hum,27,-1,0.0,332,hum > 0.635 and hum > 0.735 and hr > 0.4565 and cnt <= 0.2594
+windspeed,28,-1,0.0,262,windspeed > 0.2807 and windspeed > 0.3685 and windspeed > 0.4386
+cnt,3,-1,0.0,1194,cnt <= 0.1595 and cnt <= 0.09048 and cnt <= 0.08525
+cnt,23,1,0.0,54,cnt > 0.1595 and cnt > 0.2547 and atemp <= 0.356 and cnt > 0.2929
+cnt,24,1,0.0,649,cnt > 0.1595 and cnt > 0.2547 and atemp > 0.356

@@ -1,0 +1,54 @@
+=== SHAP sign of run_t-1 ===
+|--- weight_t-1 <= 0.50
+|   |--- run_t-1 <= 0.50
+|   |   |--- Weight_Kg_t <= 0.33
+|   |   |   |--- calories_t-2 <= 0.14
+|   |   |   |   |--- class: True
+|   |   |   |--- calories_t-2 >  0.14
+|   |   |   |   |--- class: False
+|   |   |--- Weight_Kg_t >  0.33
+|   |   |   |--- Date_t-2 <= 0.05
+|   |   |   |   |--- class: False
+|   |   |   |--- Date_t-2 >  0.05
+|   |   |   |   |--- class: False
+|   |--- run_t-1 >  0.50
+|   |   |--- class: True
+|--- weight_t-1 >  0.50
+|   |--- run_t-1 <= 0.50
+|   |   |--- calories_t-1 <= 0.33
+|   |   |   |--- class: True
+|   |   |--- calories_t-1 >  0.33
+|   |   |   |--- class: True
+|   |--- run_t-1 >  0.50
+|   |   |--- class: False
+
+=== SHAP sign of run_t ===
+|--- prot_t-2 <= 0.50
+|   |--- five_donuts_t <= 0.50
+|   |   |--- Weight_Kg_t-1 <= 0.50
+|   |   |   |--- five_donuts_t-1 <= 0.50
+|   |   |   |   |--- class: False
+|   |   |   |--- five_donuts_t-1 >  0.50
+|   |   |   |   |--- class: False
+|   |   |--- Weight_Kg_t-1 >  0.50
+|   |   |   |--- run_t <= 0.50
+|   |   |   |   |--- class: False
+|   |   |   |--- run_t >  0.50
+|   |   |   |   |--- class: True
+|   |--- five_donuts_t >  0.50
+|   |   |--- Date_t <= 0.11
+|   |   |   |--- class: True
+|   |   |--- Date_t >  0.11
+|   |   |   |--- run_t-2 <= 0.50
+|   |   |   |   |--- class: False
+|   |   |   |--- run_t-2 >  0.50
+|   |   |   |   |--- class: True
+|--- prot_t-2 >  0.50
+|   |--- calories_t-2 <= 0.44
+|   |   |--- Date_t-1 <= 0.42
+|   |   |   |--- class: True
+|   |   |--- Date_t-1 >  0.42
+|   |   |   |--- class: True
+|   |--- calories_t-2 >  0.44
+|   |   |--- class: True
+

@@ -1,0 +1,30 @@
+=== SHAP sign of walk_t-2 ===
+|--- walk_t-2 <= 0.50
+|   |--- class: False
+|--- walk_t-2 >  0.50
+|   |--- Weight_Kg_t-1 <= 0.16
+|   |   |--- class: True
+|   |--- Weight_Kg_t-1 >  0.16
+|   |   |--- class: True
+
+=== SHAP sign of weight_t-1 ===
+|--- weight_t-1 <= 0.50
+|   |--- Weight_Kg_t <= 0.57
+|   |   |--- wine_t <= 0.50
+|   |   |   |--- class: False
+|   |   |--- wine_t >  0.50
+|   |   |   |--- calories_t-2 <= 0.18
+|   |   |   |   |--- class: False
+|   |   |   |--- calories_t-2 >  0.18
+|   |   |   |   |--- class: True
+|   |--- Weight_Kg_t >  0.57
+|   |   |--- class: True
+|--- weight_t-1 >  0.50
+|   |--- Weight_Kg_t <= 0.44
+|   |   |--- class: True
+|   |--- Weight_Kg_t >  0.44
+|   |   |--- calories_t-1 <= 0.27
+|   |   |   |--- class: True
+|   |   |--- calories_t-1 >  0.27
+|   |   |   |--- class: False
+

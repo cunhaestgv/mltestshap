@@ -1,0 +1,17 @@
+{
+ "scenario": "unstable",
+ "task": "regression",
+ "rep": 3,
+ "mult": 1.0,
+ "real": false,
+ "base": 0.1207802731383493,
+ "root": 0,
+ "shap_top": 0,
+ "rule": null,
+ "tried": {
+  "0": {
+   "disc_gain": -0.9923218369045407,
+   "test": 0.25162086850409426
+  }
+ }
+}

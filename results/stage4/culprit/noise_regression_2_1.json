@@ -1,0 +1,17 @@
+{
+ "scenario": "noise",
+ "task": "regression",
+ "rep": 2,
+ "mult": 1.0,
+ "real": false,
+ "base": 0.04653565163585687,
+ "root": 0,
+ "shap_top": 0,
+ "rule": null,
+ "tried": {
+  "0": {
+   "disc_gain": -2.228719081582073,
+   "test": 0.19903133380625238
+  }
+ }
+}

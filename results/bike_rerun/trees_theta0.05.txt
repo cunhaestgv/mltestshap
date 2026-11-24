@@ -1,0 +1,1359 @@
+=== SHAP sign of season_t-2 ===
+|--- season_t-1 <= 0.50
+|   |--- season_t-2 <= 0.17
+|   |   |--- class: False
+|   |--- season_t-2 >  0.17
+|   |   |--- cnt_t <= 0.17
+|   |   |   |--- cnt_t-1 <= 0.08
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt_t-1 >  0.08
+|   |   |   |   |--- class: False
+|   |   |--- cnt_t >  0.17
+|   |   |   |--- hr_t-2 <= 0.76
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t-2 >  0.76
+|   |   |   |   |--- class: False
+|--- season_t-1 >  0.50
+|   |--- class: True
+
+=== SHAP sign of yr_t-2 ===
+|--- yr_t-2 <= 0.50
+|   |--- class: False
+|--- yr_t-2 >  0.50
+|   |--- cnt_t-1 <= 0.52
+|   |   |--- class: True
+|   |--- cnt_t-1 >  0.52
+|   |   |--- cnt_t <= 0.46
+|   |   |   |--- class: True
+|   |   |--- cnt_t >  0.46
+|   |   |   |--- class: True
+
+=== SHAP sign of mnth_t-2 ===
+|--- mnth_t-2 <= 0.23
+|   |--- cnt_t-1 <= 0.20
+|   |   |--- cnt_t-1 <= 0.18
+|   |   |   |--- class: False
+|   |   |--- cnt_t-1 >  0.18
+|   |   |   |--- class: False
+|   |--- cnt_t-1 >  0.20
+|   |   |--- mnth_t <= 0.14
+|   |   |   |--- cnt_t-1 <= 0.39
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt_t-1 >  0.39
+|   |   |   |   |--- class: True
+|   |   |--- mnth_t >  0.14
+|   |   |   |--- cnt_t <= 0.29
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt_t >  0.29
+|   |   |   |   |--- class: True
+|--- mnth_t-2 >  0.23
+|   |--- mnth_t-2 <= 0.32
+|   |   |--- cnt_t-1 <= 0.12
+|   |   |   |--- cnt_t-1 <= 0.05
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt_t-1 >  0.05
+|   |   |   |   |--- class: False
+|   |   |--- cnt_t-1 >  0.12
+|   |   |   |--- hr_t-2 <= 0.76
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t-2 >  0.76
+|   |   |   |   |--- class: True
+|   |--- mnth_t-2 >  0.32
+|   |   |--- cnt_t-1 <= 0.29
+|   |   |   |--- yr_t-2 <= 0.50
+|   |   |   |   |--- class: True
+|   |   |   |--- yr_t-2 >  0.50
+|   |   |   |   |--- class: True
+|   |   |--- cnt_t-1 >  0.29
+|   |   |   |--- mnth_t-2 <= 0.59
+|   |   |   |   |--- class: True
+|   |   |   |--- mnth_t-2 >  0.59
+|   |   |   |   |--- class: False
+
+=== SHAP sign of hr_t-2 ===
+|--- hr_t-1 <= 0.76
+|   |--- cnt_t-2 <= 0.04
+|   |   |--- hr_t-2 <= 0.41
+|   |   |   |--- cnt_t-2 <= 0.02
+|   |   |   |   |--- class: True
+|   |   |   |--- cnt_t-2 >  0.02
+|   |   |   |   |--- class: True
+|   |   |--- hr_t-2 >  0.41
+|   |   |   |--- class: True
+|   |--- cnt_t-2 >  0.04
+|   |   |--- hr_t-2 <= 0.50
+|   |   |   |--- workingday_t-2 <= 0.50
+|   |   |   |   |--- class: True
+|   |   |   |--- workingday_t-2 >  0.50
+|   |   |   |   |--- class: False
+|   |   |--- hr_t-2 >  0.50
+|   |   |   |--- workingday_t-1 <= 0.50
+|   |   |   |   |--- class: False
+|   |   |   |--- workingday_t-1 >  0.50
+|   |   |   |   |--- class: True
+|--- hr_t-1 >  0.76
+|   |--- class: False
+
+=== SHAP sign of holiday_t-2 ===
+|--- hr_t-1 <= 0.72
+|   |--- cnt_t <= 0.25
+|   |   |--- holiday_t-2 <= 0.50
+|   |   |   |--- hr_t-2 <= 0.15
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t-2 >  0.15
+|   |   |   |   |--- class: True
+|   |   |--- holiday_t-2 >  0.50
+|   |   |   |--- class: False
+|   |--- cnt_t >  0.25
+|   |   |--- hr_t <= 0.33
+|   |   |   |--- hum_t-1 <= 0.81
+|   |   |   |   |--- class: False
+|   |   |   |--- hum_t-1 >  0.81
+|   |   |   |   |--- class: False
+|   |   |--- hr_t >  0.33
+|   |   |   |--- workingday_t-2 <= 0.50
+|   |   |   |   |--- class: False
+|   |   |   |--- workingday_t-2 >  0.50
+|   |   |   |   |--- class: True
+|--- hr_t-1 >  0.72
+|   |--- workingday_t-1 <= 0.50
+|   |   |--- weekday_t-2 <= 0.08
+|   |   |   |--- cnt_t <= 0.05
+|   |   |   |   |--- class: True
+|   |   |   |--- cnt_t >  0.05
+|   |   |   |   |--- class: False
+|   |   |--- weekday_t-2 >  0.08
+|   |   |   |--- cnt_t-2 <= 0.21
+|   |   |   |   |--- class: True
+|   |   |   |--- cnt_t-2 >  0.21
+|   |   |   |   |--- class: True
+|   |--- workingday_t-1 >  0.50
+|   |   |--- hr_t-1 <= 0.76
+|   |   |   |--- mnth_t-1 <= 0.23
+|   |   |   |   |--- class: True
+|   |   |   |--- mnth_t-1 >  0.23
+|   |   |   |   |--- class: False
+|   |   |--- hr_t-1 >  0.76
+|   |   |   |--- atemp_t-1 <= 0.30
+|   |   |   |   |--- class: False
+|   |   |   |--- atemp_t-1 >  0.30
+|   |   |   |   |--- class: False
+
+=== SHAP sign of weekday_t-2 ===
+|--- weekday_t-2 <= 0.08
+|   |--- cnt_t <= 0.11
+|   |   |--- cnt_t-2 <= 0.13
+|   |   |   |--- class: False
+|   |   |--- cnt_t-2 >  0.13
+|   |   |   |--- class: False
+|   |--- cnt_t >  0.11
+|   |   |--- hr_t <= 0.54
+|   |   |   |--- atemp_t-1 <= 0.42
+|   |   |   |   |--- class: True
+|   |   |   |--- atemp_t-1 >  0.42
+|   |   |   |   |--- class: True
+|   |   |--- hr_t >  0.54
+|   |   |   |--- cnt_t <= 0.25
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt_t >  0.25
+|   |   |   |   |--- class: True
+|--- weekday_t-2 >  0.08
+|   |--- weekday_t-1 <= 0.92
+|   |   |--- weekday_t-2 <= 0.58
+|   |   |   |--- cnt_t-1 <= 0.04
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt_t-1 >  0.04
+|   |   |   |   |--- class: True
+|   |   |--- weekday_t-2 >  0.58
+|   |   |   |--- hr_t-1 <= 0.28
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t-1 >  0.28
+|   |   |   |   |--- class: False
+|   |--- weekday_t-1 >  0.92
+|   |   |--- cnt_t-1 <= 0.14
+|   |   |   |--- cnt_t-1 <= 0.11
+|   |   |   |   |--- class: True
+|   |   |   |--- cnt_t-1 >  0.11
+|   |   |   |   |--- class: True
+|   |   |--- cnt_t-1 >  0.14
+|   |   |   |--- hr_t <= 0.54
+|   |   |   |   |--- class: False
+|   |   |   |--- hr_t >  0.54
+|   |   |   |   |--- class: True
+
+=== SHAP sign of workingday_t-2 ===
+|--- workingday_t-2 <= 0.50
+|   |--- hr_t-2 <= 0.24
+|   |   |--- season_t-2 <= 0.17
+|   |   |   |--- weekday_t <= 0.08
+|   |   |   |   |--- class: True
+|   |   |   |--- weekday_t >  0.08
+|   |   |   |   |--- class: False
+|   |   |--- season_t-2 >  0.17
+|   |   |   |--- weekday_t-2 <= 0.08
+|   |   |   |   |--- class: True
+|   |   |   |--- weekday_t-2 >  0.08
+|   |   |   |   |--- class: True
+|   |--- hr_t-2 >  0.24
+|   |   |--- holiday_t-2 <= 0.50
+|   |   |   |--- hr_t-1 <= 0.33
+|   |   |   |   |--- class: False
+|   |   |   |--- hr_t-1 >  0.33
+|   |   |   |   |--- class: False
+|   |   |--- holiday_t-2 >  0.50
+|   |   |   |--- hr_t <= 0.59
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t >  0.59
+|   |   |   |   |--- class: False
+|--- workingday_t-2 >  0.50
+|   |--- hr_t-2 <= 0.59
+|   |   |--- hr_t-1 <= 0.28
+|   |   |   |--- class: True
+|   |   |--- hr_t-1 >  0.28
+|   |   |   |--- cnt_t <= 0.14
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt_t >  0.14
+|   |   |   |   |--- class: False
+|   |--- hr_t-2 >  0.59
+|   |   |--- class: True
+
+=== SHAP sign of weathersit_t-2 ===
+|--- weathersit_t-2 <= 0.17
+|   |--- workingday_t <= 0.50
+|   |   |--- cnt_t-1 <= 0.14
+|   |   |   |--- hr_t <= 0.07
+|   |   |   |   |--- class: False
+|   |   |   |--- hr_t >  0.07
+|   |   |   |   |--- class: True
+|   |   |--- cnt_t-1 >  0.14
+|   |   |   |--- yr_t-2 <= 0.50
+|   |   |   |   |--- class: False
+|   |   |   |--- yr_t-2 >  0.50
+|   |   |   |   |--- class: False
+|   |--- workingday_t >  0.50
+|   |   |--- hr_t-2 <= 0.50
+|   |   |   |--- cnt_t-1 <= 0.42
+|   |   |   |   |--- class: True
+|   |   |   |--- cnt_t-1 >  0.42
+|   |   |   |   |--- class: True
+|   |   |--- hr_t-2 >  0.50
+|   |   |   |--- hr_t-1 <= 0.76
+|   |   |   |   |--- class: False
+|   |   |   |--- hr_t-1 >  0.76
+|   |   |   |   |--- class: True
+|--- weathersit_t-2 >  0.17
+|   |--- workingday_t <= 0.50
+|   |   |--- cnt_t-1 <= 0.12
+|   |   |   |--- cnt_t-2 <= 0.03
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt_t-2 >  0.03
+|   |   |   |   |--- class: True
+|   |   |--- cnt_t-1 >  0.12
+|   |   |   |--- cnt_t-1 <= 0.18
+|   |   |   |   |--- class: True
+|   |   |   |--- cnt_t-1 >  0.18
+|   |   |   |   |--- class: True
+|   |--- workingday_t >  0.50
+|   |   |--- cnt_t-1 <= 0.27
+|   |   |   |--- atemp_t <= 0.60
+|   |   |   |   |--- class: False
+|   |   |   |--- atemp_t >  0.60
+|   |   |   |   |--- class: False
+|   |   |--- cnt_t-1 >  0.27
+|   |   |   |--- hr_t-1 <= 0.37
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t-1 >  0.37
+|   |   |   |   |--- class: False
+
+=== SHAP sign of temp_t-2 ===
+|--- temp_t-2 <= 0.46
+|   |--- cnt_t-1 <= 0.11
+|   |   |--- atemp_t-2 <= 0.36
+|   |   |   |--- hum_t <= 0.39
+|   |   |   |   |--- class: False
+|   |   |   |--- hum_t >  0.39
+|   |   |   |   |--- class: False
+|   |   |--- atemp_t-2 >  0.36
+|   |   |   |--- hr_t <= 0.76
+|   |   |   |   |--- class: False
+|   |   |   |--- hr_t >  0.76
+|   |   |   |   |--- class: True
+|   |--- cnt_t-1 >  0.11
+|   |   |--- temp_t-2 <= 0.35
+|   |   |   |--- mnth_t-2 <= 0.23
+|   |   |   |   |--- class: False
+|   |   |   |--- mnth_t-2 >  0.23
+|   |   |   |   |--- class: False
+|   |   |--- temp_t-2 >  0.35
+|   |   |   |--- cnt_t-1 <= 0.35
+|   |   |   |   |--- class: True
+|   |   |   |--- cnt_t-1 >  0.35
+|   |   |   |   |--- class: True
+|--- temp_t-2 >  0.46
+|   |--- cnt_t-1 <= 0.26
+|   |   |--- atemp_t-2 <= 0.46
+|   |   |   |--- windspeed_t-2 <= 0.32
+|   |   |   |   |--- class: True
+|   |   |   |--- windspeed_t-2 >  0.32
+|   |   |   |   |--- class: True
+|   |   |--- atemp_t-2 >  0.46
+|   |   |   |--- atemp_t-2 <= 0.78
+|   |   |   |   |--- class: True
+|   |   |   |--- atemp_t-2 >  0.78
+|   |   |   |   |--- class: True
+|   |--- cnt_t-1 >  0.26
+|   |   |--- atemp_t-1 <= 0.64
+|   |   |   |--- temp_t-1 <= 0.65
+|   |   |   |   |--- class: True
+|   |   |   |--- temp_t-1 >  0.65
+|   |   |   |   |--- class: True
+|   |   |--- atemp_t-1 >  0.64
+|   |   |   |--- workingday_t-1 <= 0.50
+|   |   |   |   |--- class: False
+|   |   |   |--- workingday_t-1 >  0.50
+|   |   |   |   |--- class: True
+
+=== SHAP sign of atemp_t-2 ===
+|--- temp_t <= 0.41
+|   |--- cnt_t-1 <= 0.12
+|   |   |--- temp_t <= 0.35
+|   |   |   |--- weekday_t <= 0.08
+|   |   |   |   |--- class: False
+|   |   |   |--- weekday_t >  0.08
+|   |   |   |   |--- class: False
+|   |   |--- temp_t >  0.35
+|   |   |   |--- hum_t-1 <= 0.69
+|   |   |   |   |--- class: False
+|   |   |   |--- hum_t-1 >  0.69
+|   |   |   |   |--- class: False
+|   |--- cnt_t-1 >  0.12
+|   |   |--- hr_t-2 <= 0.59
+|   |   |   |--- workingday_t-1 <= 0.50
+|   |   |   |   |--- class: False
+|   |   |   |--- workingday_t-1 >  0.50
+|   |   |   |   |--- class: True
+|   |   |--- hr_t-2 >  0.59
+|   |   |   |--- workingday_t-2 <= 0.50
+|   |   |   |   |--- class: False
+|   |   |   |--- workingday_t-2 >  0.50
+|   |   |   |   |--- class: False
+|--- temp_t >  0.41
+|   |--- temp_t <= 0.76
+|   |   |--- atemp_t-2 <= 0.48
+|   |   |   |--- hr_t-2 <= 0.54
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t-2 >  0.54
+|   |   |   |   |--- class: False
+|   |   |--- atemp_t-2 >  0.48
+|   |   |   |--- hr_t-1 <= 0.76
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t-1 >  0.76
+|   |   |   |   |--- class: True
+|   |--- temp_t >  0.76
+|   |   |--- hr_t-2 <= 0.72
+|   |   |   |--- cnt_t-1 <= 0.14
+|   |   |   |   |--- class: True
+|   |   |   |--- cnt_t-1 >  0.14
+|   |   |   |   |--- class: False
+|   |   |--- hr_t-2 >  0.72
+|   |   |   |--- class: True
+
+=== SHAP sign of hum_t-2 ===
+|--- cnt_t-2 <= 0.03
+|   |--- hum_t-2 <= 0.72
+|   |   |--- cnt_t-2 <= 0.01
+|   |   |   |--- hum_t <= 0.50
+|   |   |   |   |--- class: False
+|   |   |   |--- hum_t >  0.50
+|   |   |   |   |--- class: False
+|   |   |--- cnt_t-2 >  0.01
+|   |   |   |--- hr_t-1 <= 0.24
+|   |   |   |   |--- class: False
+|   |   |   |--- hr_t-1 >  0.24
+|   |   |   |   |--- class: False
+|   |--- hum_t-2 >  0.72
+|   |   |--- cnt_t <= 0.03
+|   |   |   |--- hr_t <= 0.20
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t >  0.20
+|   |   |   |   |--- class: False
+|   |   |--- cnt_t >  0.03
+|   |   |   |--- hum_t-1 <= 0.94
+|   |   |   |   |--- class: False
+|   |   |   |--- hum_t-1 >  0.94
+|   |   |   |   |--- class: False
+|--- cnt_t-2 >  0.03
+|   |--- weathersit_t-2 <= 0.50
+|   |   |--- hr_t <= 0.85
+|   |   |   |--- cnt_t <= 0.21
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt_t >  0.21
+|   |   |   |   |--- class: True
+|   |   |--- hr_t >  0.85
+|   |   |   |--- hum_t-2 <= 0.64
+|   |   |   |   |--- class: True
+|   |   |   |--- hum_t-2 >  0.64
+|   |   |   |   |--- class: False
+|   |--- weathersit_t-2 >  0.50
+|   |   |--- workingday_t-2 <= 0.50
+|   |   |   |--- class: True
+|   |   |--- workingday_t-2 >  0.50
+|   |   |   |--- cnt_t-1 <= 0.24
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt_t-1 >  0.24
+|   |   |   |   |--- class: True
+
+=== SHAP sign of windspeed_t-2 ===
+|--- windspeed_t-2 <= 0.25
+|   |--- hr_t-2 <= 0.50
+|   |   |--- temp_t-1 <= 0.37
+|   |   |   |--- windspeed_t-2 <= 0.21
+|   |   |   |   |--- class: True
+|   |   |   |--- windspeed_t-2 >  0.21
+|   |   |   |   |--- class: True
+|   |   |--- temp_t-1 >  0.37
+|   |   |   |--- workingday_t-2 <= 0.50
+|   |   |   |   |--- class: True
+|   |   |   |--- workingday_t-2 >  0.50
+|   |   |   |   |--- class: False
+|   |--- hr_t-2 >  0.50
+|   |   |--- windspeed_t-2 <= 0.21
+|   |   |   |--- hr_t-1 <= 0.76
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t-1 >  0.76
+|   |   |   |   |--- class: True
+|   |   |--- windspeed_t-2 >  0.21
+|   |   |   |--- cnt_t-1 <= 0.16
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt_t-1 >  0.16
+|   |   |   |   |--- class: True
+|--- windspeed_t-2 >  0.25
+|   |--- hr_t-2 <= 0.72
+|   |   |--- atemp_t-1 <= 0.46
+|   |   |   |--- workingday_t-1 <= 0.50
+|   |   |   |   |--- class: False
+|   |   |   |--- workingday_t-1 >  0.50
+|   |   |   |   |--- class: False
+|   |   |--- atemp_t-1 >  0.46
+|   |   |   |--- windspeed_t-2 <= 0.40
+|   |   |   |   |--- class: True
+|   |   |   |--- windspeed_t-2 >  0.40
+|   |   |   |   |--- class: False
+|   |--- hr_t-2 >  0.72
+|   |   |--- temp_t-2 <= 0.73
+|   |   |   |--- windspeed_t-2 <= 0.28
+|   |   |   |   |--- class: False
+|   |   |   |--- windspeed_t-2 >  0.28
+|   |   |   |   |--- class: False
+|   |   |--- temp_t-2 >  0.73
+|   |   |   |--- class: False
+
+=== SHAP sign of cnt_t-2 ===
+|--- hr_t-2 <= 0.24
+|   |--- workingday_t <= 0.50
+|   |   |--- yr_t <= 0.50
+|   |   |   |--- weekday_t-1 <= 0.08
+|   |   |   |   |--- class: False
+|   |   |   |--- weekday_t-1 >  0.08
+|   |   |   |   |--- class: False
+|   |   |--- yr_t >  0.50
+|   |   |   |--- cnt_t-2 <= 0.04
+|   |   |   |   |--- class: True
+|   |   |   |--- cnt_t-2 >  0.04
+|   |   |   |   |--- class: False
+|   |--- workingday_t >  0.50
+|   |   |--- cnt_t-1 <= 0.11
+|   |   |   |--- cnt_t-1 <= 0.04
+|   |   |   |   |--- class: True
+|   |   |   |--- cnt_t-1 >  0.04
+|   |   |   |   |--- class: True
+|   |   |--- cnt_t-1 >  0.11
+|   |   |   |--- class: True
+|--- hr_t-2 >  0.24
+|   |--- cnt_t-2 <= 0.27
+|   |   |--- cnt_t-1 <= 0.41
+|   |   |   |--- cnt_t-1 <= 0.05
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt_t-1 >  0.05
+|   |   |   |   |--- class: False
+|   |   |--- cnt_t-1 >  0.41
+|   |   |   |--- class: True
+|   |--- cnt_t-2 >  0.27
+|   |   |--- cnt_t-1 <= 0.35
+|   |   |   |--- cnt_t-2 <= 0.39
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt_t-2 >  0.39
+|   |   |   |   |--- class: True
+|   |   |--- cnt_t-1 >  0.35
+|   |   |   |--- cnt_t-2 <= 0.37
+|   |   |   |   |--- class: True
+|   |   |   |--- cnt_t-2 >  0.37
+|   |   |   |   |--- class: True
+
+=== SHAP sign of season_t-1 ===
+|--- season_t-1 <= 0.50
+|   |--- season_t-1 <= 0.17
+|   |   |--- hr_t <= 0.28
+|   |   |   |--- workingday_t-1 <= 0.50
+|   |   |   |   |--- class: True
+|   |   |   |--- workingday_t-1 >  0.50
+|   |   |   |   |--- class: True
+|   |   |--- hr_t >  0.28
+|   |   |   |--- hr_t <= 0.80
+|   |   |   |   |--- class: False
+|   |   |   |--- hr_t >  0.80
+|   |   |   |   |--- class: True
+|   |--- season_t-1 >  0.17
+|   |   |--- cnt_t <= 0.43
+|   |   |   |--- cnt_t <= 0.39
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt_t >  0.39
+|   |   |   |   |--- class: False
+|   |   |--- cnt_t >  0.43
+|   |   |   |--- cnt_t-2 <= 0.27
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt_t-2 >  0.27
+|   |   |   |   |--- class: True
+|--- season_t-1 >  0.50
+|   |--- hr_t <= 0.28
+|   |   |--- workingday_t <= 0.50
+|   |   |   |--- hr_t-2 <= 0.07
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t-2 >  0.07
+|   |   |   |   |--- class: False
+|   |   |--- workingday_t >  0.50
+|   |   |   |--- hr_t <= 0.24
+|   |   |   |   |--- class: False
+|   |   |   |--- hr_t >  0.24
+|   |   |   |   |--- class: False
+|   |--- hr_t >  0.28
+|   |   |--- weekday_t <= 0.08
+|   |   |   |--- cnt_t <= 0.20
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt_t >  0.20
+|   |   |   |   |--- class: True
+|   |   |--- weekday_t >  0.08
+|   |   |   |--- cnt_t <= 0.11
+|   |   |   |   |--- class: True
+|   |   |   |--- cnt_t >  0.11
+|   |   |   |   |--- class: True
+
+=== SHAP sign of yr_t-1 ===
+|--- yr_t-2 <= 0.50
+|   |--- workingday_t-1 <= 0.50
+|   |   |--- hr_t-2 <= 0.67
+|   |   |   |--- hr_t <= 0.67
+|   |   |   |   |--- class: False
+|   |   |   |--- hr_t >  0.67
+|   |   |   |   |--- class: False
+|   |   |--- hr_t-2 >  0.67
+|   |   |   |--- weekday_t-1 <= 0.92
+|   |   |   |   |--- class: True
+|   |   |   |--- weekday_t-1 >  0.92
+|   |   |   |   |--- class: True
+|   |--- workingday_t-1 >  0.50
+|   |   |--- hr_t <= 0.02
+|   |   |   |--- cnt_t-1 <= 0.07
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt_t-1 >  0.07
+|   |   |   |   |--- class: False
+|   |   |--- hr_t >  0.02
+|   |   |   |--- class: False
+|--- yr_t-2 >  0.50
+|   |--- workingday_t <= 0.50
+|   |   |--- hr_t-2 <= 0.50
+|   |   |   |--- class: True
+|   |   |--- hr_t-2 >  0.50
+|   |   |   |--- hr_t-2 <= 0.63
+|   |   |   |   |--- class: False
+|   |   |   |--- hr_t-2 >  0.63
+|   |   |   |   |--- class: False
+|   |--- workingday_t >  0.50
+|   |   |--- cnt_t-2 <= 0.60
+|   |   |   |--- hr_t-1 <= 0.72
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t-1 >  0.72
+|   |   |   |   |--- class: True
+|   |   |--- cnt_t-2 >  0.60
+|   |   |   |--- class: False
+
+=== SHAP sign of mnth_t-1 ===
+|--- mnth_t-1 <= 0.41
+|   |--- cnt_t-1 <= 0.29
+|   |   |--- class: False
+|   |--- cnt_t-1 >  0.29
+|   |   |--- mnth_t <= 0.32
+|   |   |   |--- class: False
+|   |   |--- mnth_t >  0.32
+|   |   |   |--- workingday_t-2 <= 0.50
+|   |   |   |   |--- class: True
+|   |   |   |--- workingday_t-2 >  0.50
+|   |   |   |   |--- class: False
+|--- mnth_t-1 >  0.41
+|   |--- hr_t-2 <= 0.98
+|   |   |--- class: True
+|   |--- hr_t-2 >  0.98
+|   |   |--- class: True
+
+=== SHAP sign of hr_t-1 ===
+|--- hr_t-1 <= 0.72
+|   |--- hr_t-2 <= 0.11
+|   |   |--- workingday_t-2 <= 0.50
+|   |   |   |--- cnt_t-2 <= 0.06
+|   |   |   |   |--- class: True
+|   |   |   |--- cnt_t-2 >  0.06
+|   |   |   |   |--- class: False
+|   |   |--- workingday_t-2 >  0.50
+|   |   |   |--- cnt_t-2 <= 0.01
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt_t-2 >  0.01
+|   |   |   |   |--- class: False
+|   |--- hr_t-2 >  0.11
+|   |   |--- hr_t-1 <= 0.63
+|   |   |   |--- hr_t-2 <= 0.15
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t-2 >  0.15
+|   |   |   |   |--- class: True
+|   |   |--- hr_t-1 >  0.63
+|   |   |   |--- cnt_t-2 <= 0.28
+|   |   |   |   |--- class: True
+|   |   |   |--- cnt_t-2 >  0.28
+|   |   |   |   |--- class: False
+|--- hr_t-1 >  0.72
+|   |--- hr_t <= 0.74
+|   |   |--- workingday_t-1 <= 0.50
+|   |   |   |--- class: True
+|   |   |--- workingday_t-1 >  0.50
+|   |   |   |--- temp_t-1 <= 0.39
+|   |   |   |   |--- class: False
+|   |   |   |--- temp_t-1 >  0.39
+|   |   |   |   |--- class: False
+|   |--- hr_t >  0.74
+|   |   |--- cnt_t <= 0.03
+|   |   |   |--- class: False
+|   |   |--- cnt_t >  0.03
+|   |   |   |--- class: False
+
+=== SHAP sign of holiday_t-1 ===
+|--- hr_t-2 <= 0.72
+|   |--- workingday_t <= 0.50
+|   |   |--- holiday_t-2 <= 0.50
+|   |   |   |--- hr_t-1 <= 0.33
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t-1 >  0.33
+|   |   |   |   |--- class: True
+|   |   |--- holiday_t-2 >  0.50
+|   |   |   |--- class: False
+|   |--- workingday_t >  0.50
+|   |   |--- cnt_t <= 0.23
+|   |   |   |--- hr_t <= 0.72
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t >  0.72
+|   |   |   |   |--- class: True
+|   |   |--- cnt_t >  0.23
+|   |   |   |--- hr_t-2 <= 0.24
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t-2 >  0.24
+|   |   |   |   |--- class: True
+|--- hr_t-2 >  0.72
+|   |--- temp_t <= 0.48
+|   |   |--- weekday_t-1 <= 0.92
+|   |   |   |--- hr_t <= 0.85
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t >  0.85
+|   |   |   |   |--- class: False
+|   |   |--- weekday_t-1 >  0.92
+|   |   |   |--- hr_t <= 0.89
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t >  0.89
+|   |   |   |   |--- class: True
+|   |--- temp_t >  0.48
+|   |   |--- cnt_t-1 <= 0.43
+|   |   |   |--- hr_t-1 <= 0.93
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t-1 >  0.93
+|   |   |   |   |--- class: True
+|   |   |--- cnt_t-1 >  0.43
+|   |   |   |--- class: True
+
+=== SHAP sign of weekday_t-1 ===
+|--- weekday_t-1 <= 0.58
+|   |--- weekday_t-1 <= 0.08
+|   |   |--- hr_t <= 0.85
+|   |   |   |--- hr_t-2 <= 0.67
+|   |   |   |   |--- class: False
+|   |   |   |--- hr_t-2 >  0.67
+|   |   |   |   |--- class: False
+|   |   |--- hr_t >  0.85
+|   |   |   |--- mnth_t-2 <= 0.32
+|   |   |   |   |--- class: False
+|   |   |   |--- mnth_t-2 >  0.32
+|   |   |   |   |--- class: True
+|   |--- weekday_t-1 >  0.08
+|   |   |--- cnt_t-2 <= 0.12
+|   |   |   |--- cnt_t-1 <= 0.09
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt_t-1 >  0.09
+|   |   |   |   |--- class: False
+|   |   |--- cnt_t-2 >  0.12
+|   |   |   |--- class: False
+|--- weekday_t-1 >  0.58
+|   |--- hr_t-1 <= 0.89
+|   |   |--- mnth_t-2 <= 0.86
+|   |   |   |--- class: True
+|   |   |--- mnth_t-2 >  0.86
+|   |   |   |--- workingday_t-2 <= 0.50
+|   |   |   |   |--- class: True
+|   |   |   |--- workingday_t-2 >  0.50
+|   |   |   |   |--- class: True
+|   |--- hr_t-1 >  0.89
+|   |   |--- workingday_t-1 <= 0.50
+|   |   |   |--- windspeed_t <= 0.21
+|   |   |   |   |--- class: False
+|   |   |   |--- windspeed_t >  0.21
+|   |   |   |   |--- class: False
+|   |   |--- workingday_t-1 >  0.50
+|   |   |   |--- hr_t-2 <= 0.93
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t-2 >  0.93
+|   |   |   |   |--- class: True
+
+=== SHAP sign of workingday_t-1 ===
+|--- workingday_t-1 <= 0.50
+|   |--- class: True
+|--- workingday_t-1 >  0.50
+|   |--- cnt_t-2 <= 0.01
+|   |   |--- yr_t <= 0.50
+|   |   |   |--- class: False
+|   |   |--- yr_t >  0.50
+|   |   |   |--- hum_t <= 0.69
+|   |   |   |   |--- class: False
+|   |   |   |--- hum_t >  0.69
+|   |   |   |   |--- class: False
+|   |--- cnt_t-2 >  0.01
+|   |   |--- class: False
+
+=== SHAP sign of weathersit_t-1 ===
+|--- atemp_t-1 <= 0.61
+|   |--- weathersit_t-1 <= 0.17
+|   |   |--- hr_t-1 <= 0.20
+|   |   |   |--- weekday_t <= 0.92
+|   |   |   |   |--- class: False
+|   |   |   |--- weekday_t >  0.92
+|   |   |   |   |--- class: True
+|   |   |--- hr_t-1 >  0.20
+|   |   |   |--- cnt_t-1 <= 0.26
+|   |   |   |   |--- class: True
+|   |   |   |--- cnt_t-1 >  0.26
+|   |   |   |   |--- class: False
+|   |--- weathersit_t-1 >  0.17
+|   |   |--- hr_t-1 <= 0.20
+|   |   |   |--- weekday_t-1 <= 0.75
+|   |   |   |   |--- class: True
+|   |   |   |--- weekday_t-1 >  0.75
+|   |   |   |   |--- class: True
+|   |   |--- hr_t-1 >  0.20
+|   |   |   |--- temp_t-1 <= 0.39
+|   |   |   |   |--- class: False
+|   |   |   |--- temp_t-1 >  0.39
+|   |   |   |   |--- class: False
+|--- atemp_t-1 >  0.61
+|   |--- weathersit_t-1 <= 0.17
+|   |   |--- cnt_t-1 <= 0.13
+|   |   |   |--- hr_t <= 0.24
+|   |   |   |   |--- class: False
+|   |   |   |--- hr_t >  0.24
+|   |   |   |   |--- class: True
+|   |   |--- cnt_t-1 >  0.13
+|   |   |   |--- hr_t <= 0.93
+|   |   |   |   |--- class: False
+|   |   |   |--- hr_t >  0.93
+|   |   |   |   |--- class: False
+|   |--- weathersit_t-1 >  0.17
+|   |   |--- hum_t-1 <= 0.64
+|   |   |   |--- class: True
+|   |   |--- hum_t-1 >  0.64
+|   |   |   |--- class: True
+
+=== SHAP sign of temp_t-1 ===
+|--- temp_t-1 <= 0.50
+|   |--- workingday_t-1 <= 0.50
+|   |   |--- hr_t-2 <= 0.37
+|   |   |   |--- hr_t-1 <= 0.28
+|   |   |   |   |--- class: False
+|   |   |   |--- hr_t-1 >  0.28
+|   |   |   |   |--- class: False
+|   |   |--- hr_t-2 >  0.37
+|   |   |   |--- holiday_t-1 <= 0.50
+|   |   |   |   |--- class: True
+|   |   |   |--- holiday_t-1 >  0.50
+|   |   |   |   |--- class: False
+|   |--- workingday_t-1 >  0.50
+|   |   |--- hr_t-2 <= 0.72
+|   |   |   |--- temp_t-1 <= 0.48
+|   |   |   |   |--- class: False
+|   |   |   |--- temp_t-1 >  0.48
+|   |   |   |   |--- class: False
+|   |   |--- hr_t-2 >  0.72
+|   |   |   |--- cnt_t-2 <= 0.08
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt_t-2 >  0.08
+|   |   |   |   |--- class: False
+|--- temp_t-1 >  0.50
+|   |--- hr_t-2 <= 0.89
+|   |   |--- workingday_t-1 <= 0.50
+|   |   |   |--- hr_t-2 <= 0.50
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t-2 >  0.50
+|   |   |   |   |--- class: False
+|   |   |--- workingday_t-1 >  0.50
+|   |   |   |--- hr_t-2 <= 0.76
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t-2 >  0.76
+|   |   |   |   |--- class: True
+|   |--- hr_t-2 >  0.89
+|   |   |--- hr_t <= 0.52
+|   |   |   |--- windspeed_t-2 <= 0.25
+|   |   |   |   |--- class: False
+|   |   |   |--- windspeed_t-2 >  0.25
+|   |   |   |   |--- class: False
+|   |   |--- hr_t >  0.52
+|   |   |   |--- atemp_t-2 <= 0.60
+|   |   |   |   |--- class: False
+|   |   |   |--- atemp_t-2 >  0.60
+|   |   |   |   |--- class: True
+
+=== SHAP sign of atemp_t-1 ===
+|--- atemp_t-2 <= 0.52
+|   |--- cnt_t-1 <= 0.03
+|   |   |--- atemp_t-2 <= 0.23
+|   |   |   |--- weekday_t-1 <= 0.42
+|   |   |   |   |--- class: True
+|   |   |   |--- weekday_t-1 >  0.42
+|   |   |   |   |--- class: True
+|   |   |--- atemp_t-2 >  0.23
+|   |   |   |--- hr_t-2 <= 0.37
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t-2 >  0.37
+|   |   |   |   |--- class: True
+|   |--- cnt_t-1 >  0.03
+|   |   |--- hr_t <= 0.54
+|   |   |   |--- temp_t <= 0.35
+|   |   |   |   |--- class: True
+|   |   |   |--- temp_t >  0.35
+|   |   |   |   |--- class: True
+|   |   |--- hr_t >  0.54
+|   |   |   |--- atemp_t-2 <= 0.49
+|   |   |   |   |--- class: True
+|   |   |   |--- atemp_t-2 >  0.49
+|   |   |   |   |--- class: True
+|--- atemp_t-2 >  0.52
+|   |--- hr_t-2 <= 0.67
+|   |   |--- atemp_t-1 <= 0.57
+|   |   |   |--- atemp_t <= 0.57
+|   |   |   |   |--- class: True
+|   |   |   |--- atemp_t >  0.57
+|   |   |   |   |--- class: True
+|   |   |--- atemp_t-1 >  0.57
+|   |   |   |--- workingday_t <= 0.50
+|   |   |   |   |--- class: False
+|   |   |   |--- workingday_t >  0.50
+|   |   |   |   |--- class: False
+|   |--- hr_t-2 >  0.67
+|   |   |--- atemp_t-1 <= 0.55
+|   |   |   |--- hr_t-2 <= 0.80
+|   |   |   |   |--- class: False
+|   |   |   |--- hr_t-2 >  0.80
+|   |   |   |   |--- class: False
+|   |   |--- atemp_t-1 >  0.55
+|   |   |   |--- hr_t-2 <= 0.72
+|   |   |   |   |--- class: False
+|   |   |   |--- hr_t-2 >  0.72
+|   |   |   |   |--- class: False
+
+=== SHAP sign of hum_t-1 ===
+|--- hum_t-1 <= 0.64
+|   |--- hum_t-1 <= 0.61
+|   |   |--- hr_t <= 0.11
+|   |   |   |--- weathersit_t-1 <= 0.17
+|   |   |   |   |--- class: False
+|   |   |   |--- weathersit_t-1 >  0.17
+|   |   |   |   |--- class: False
+|   |   |--- hr_t >  0.11
+|   |   |   |--- class: False
+|   |--- hum_t-1 >  0.61
+|   |   |--- hr_t-2 <= 0.20
+|   |   |   |--- class: True
+|   |   |--- hr_t-2 >  0.20
+|   |   |   |--- hum_t-1 <= 0.62
+|   |   |   |   |--- class: False
+|   |   |   |--- hum_t-1 >  0.62
+|   |   |   |   |--- class: False
+|--- hum_t-1 >  0.64
+|   |--- hum_t-1 <= 0.69
+|   |   |--- cnt_t-2 <= 0.18
+|   |   |   |--- hr_t-1 <= 0.24
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t-1 >  0.24
+|   |   |   |   |--- class: True
+|   |   |--- cnt_t-2 >  0.18
+|   |   |   |--- class: True
+|   |--- hum_t-1 >  0.69
+|   |   |--- hr_t-1 <= 0.63
+|   |   |   |--- class: True
+|   |   |--- hr_t-1 >  0.63
+|   |   |   |--- hr_t <= 0.76
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t >  0.76
+|   |   |   |   |--- class: True
+
+=== SHAP sign of windspeed_t-1 ===
+|--- windspeed_t-1 <= 0.21
+|   |--- yr_t <= 0.50
+|   |   |--- atemp_t-2 <= 0.52
+|   |   |   |--- cnt_t <= 0.05
+|   |   |   |   |--- class: True
+|   |   |   |--- cnt_t >  0.05
+|   |   |   |   |--- class: True
+|   |   |--- atemp_t-2 >  0.52
+|   |   |   |--- cnt_t <= 0.22
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt_t >  0.22
+|   |   |   |   |--- class: True
+|   |--- yr_t >  0.50
+|   |   |--- hr_t <= 0.89
+|   |   |   |--- cnt_t <= 0.00
+|   |   |   |   |--- class: True
+|   |   |   |--- cnt_t >  0.00
+|   |   |   |   |--- class: True
+|   |   |--- hr_t >  0.89
+|   |   |   |--- hum_t <= 0.69
+|   |   |   |   |--- class: True
+|   |   |   |--- hum_t >  0.69
+|   |   |   |   |--- class: True
+|--- windspeed_t-1 >  0.21
+|   |--- yr_t <= 0.50
+|   |   |--- windspeed_t-1 <= 0.25
+|   |   |   |--- class: False
+|   |   |--- windspeed_t-1 >  0.25
+|   |   |   |--- hr_t-1 <= 0.80
+|   |   |   |   |--- class: False
+|   |   |   |--- hr_t-1 >  0.80
+|   |   |   |   |--- class: True
+|   |--- yr_t >  0.50
+|   |   |--- cnt_t <= 0.46
+|   |   |   |--- hr_t <= 0.76
+|   |   |   |   |--- class: False
+|   |   |   |--- hr_t >  0.76
+|   |   |   |   |--- class: False
+|   |   |--- cnt_t >  0.46
+|   |   |   |--- windspeed_t-1 <= 0.34
+|   |   |   |   |--- class: False
+|   |   |   |--- windspeed_t-1 >  0.34
+|   |   |   |   |--- class: False
+
+=== SHAP sign of cnt_t-1 ===
+|--- cnt_t-1 <= 0.18
+|   |--- cnt_t-1 <= 0.16
+|   |   |--- hr_t-2 <= 0.85
+|   |   |   |--- class: True
+|   |   |--- hr_t-2 >  0.85
+|   |   |   |--- cnt_t-2 <= 0.07
+|   |   |   |   |--- class: True
+|   |   |   |--- cnt_t-2 >  0.07
+|   |   |   |   |--- class: True
+|   |--- cnt_t-1 >  0.16
+|   |   |--- cnt_t-2 <= 0.16
+|   |   |   |--- class: True
+|   |   |--- cnt_t-2 >  0.16
+|   |   |   |--- class: True
+|--- cnt_t-1 >  0.18
+|   |--- cnt_t-1 <= 0.23
+|   |   |--- cnt_t <= 0.17
+|   |   |   |--- cnt_t-1 <= 0.19
+|   |   |   |   |--- class: True
+|   |   |   |--- cnt_t-1 >  0.19
+|   |   |   |   |--- class: False
+|   |   |--- cnt_t >  0.17
+|   |   |   |--- workingday_t-1 <= 0.50
+|   |   |   |   |--- class: False
+|   |   |   |--- workingday_t-1 >  0.50
+|   |   |   |   |--- class: False
+|   |--- cnt_t-1 >  0.23
+|   |   |--- cnt_t <= 0.18
+|   |   |   |--- hr_t-1 <= 0.76
+|   |   |   |   |--- class: False
+|   |   |   |--- hr_t-1 >  0.76
+|   |   |   |   |--- class: False
+|   |   |--- cnt_t >  0.18
+|   |   |   |--- class: False
+
+=== SHAP sign of season_t ===
+|--- season_t-1 <= 0.17
+|   |--- hum_t-1 <= 0.62
+|   |   |--- hum_t-2 <= 0.63
+|   |   |   |--- class: False
+|   |   |--- hum_t-2 >  0.63
+|   |   |   |--- class: False
+|   |--- hum_t-1 >  0.62
+|   |   |--- hr_t-2 <= 0.54
+|   |   |   |--- cnt_t-2 <= 0.10
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt_t-2 >  0.10
+|   |   |   |   |--- class: False
+|   |   |--- hr_t-2 >  0.54
+|   |   |   |--- class: False
+|--- season_t-1 >  0.17
+|   |--- mnth_t-2 <= 0.68
+|   |   |--- season_t-2 <= 0.50
+|   |   |   |--- class: True
+|   |   |--- season_t-2 >  0.50
+|   |   |   |--- hum_t-2 <= 0.63
+|   |   |   |   |--- class: True
+|   |   |   |--- hum_t-2 >  0.63
+|   |   |   |   |--- class: True
+|   |--- mnth_t-2 >  0.68
+|   |   |--- hr_t-2 <= 0.59
+|   |   |   |--- workingday_t-2 <= 0.50
+|   |   |   |   |--- class: True
+|   |   |   |--- workingday_t-2 >  0.50
+|   |   |   |   |--- class: False
+|   |   |--- hr_t-2 >  0.59
+|   |   |   |--- weathersit_t-1 <= 0.50
+|   |   |   |   |--- class: True
+|   |   |   |--- weathersit_t-1 >  0.50
+|   |   |   |   |--- class: True
+
+=== SHAP sign of yr_t ===
+|--- yr_t-1 <= 0.50
+|   |--- cnt_t <= 0.34
+|   |   |--- hr_t <= 0.54
+|   |   |   |--- hr_t-1 <= 0.46
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t-1 >  0.46
+|   |   |   |   |--- class: True
+|   |   |--- hr_t >  0.54
+|   |   |   |--- mnth_t-2 <= 0.32
+|   |   |   |   |--- class: True
+|   |   |   |--- mnth_t-2 >  0.32
+|   |   |   |   |--- class: True
+|   |--- cnt_t >  0.34
+|   |   |--- hr_t <= 0.50
+|   |   |   |--- hum_t <= 0.69
+|   |   |   |   |--- class: True
+|   |   |   |--- hum_t >  0.69
+|   |   |   |   |--- class: True
+|   |   |--- hr_t >  0.50
+|   |   |   |--- cnt_t <= 0.40
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt_t >  0.40
+|   |   |   |   |--- class: False
+|--- yr_t-1 >  0.50
+|   |--- hr_t <= 0.63
+|   |   |--- cnt_t <= 0.38
+|   |   |   |--- workingday_t <= 0.50
+|   |   |   |   |--- class: False
+|   |   |   |--- workingday_t >  0.50
+|   |   |   |   |--- class: False
+|   |   |--- cnt_t >  0.38
+|   |   |   |--- class: True
+|   |--- hr_t >  0.63
+|   |   |--- cnt_t-1 <= 0.33
+|   |   |   |--- workingday_t-1 <= 0.50
+|   |   |   |   |--- class: True
+|   |   |   |--- workingday_t-1 >  0.50
+|   |   |   |   |--- class: False
+|   |   |--- cnt_t-1 >  0.33
+|   |   |   |--- class: True
+
+=== SHAP sign of mnth_t ===
+|--- mnth_t <= 0.50
+|   |--- atemp_t <= 0.28
+|   |   |--- cnt_t <= 0.17
+|   |   |   |--- class: True
+|   |   |--- cnt_t >  0.17
+|   |   |   |--- class: True
+|   |--- atemp_t >  0.28
+|   |   |--- windspeed_t-1 <= 0.51
+|   |   |   |--- class: True
+|   |   |--- windspeed_t-1 >  0.51
+|   |   |   |--- hum_t <= 0.44
+|   |   |   |   |--- class: True
+|   |   |   |--- hum_t >  0.44
+|   |   |   |   |--- class: True
+|--- mnth_t >  0.50
+|   |--- cnt_t <= 0.51
+|   |   |--- class: False
+|   |--- cnt_t >  0.51
+|   |   |--- class: False
+
+=== SHAP sign of hr_t ===
+|--- hr_t <= 0.33
+|   |--- hr_t-1 <= 0.63
+|   |   |--- atemp_t-1 <= 0.17
+|   |   |   |--- class: False
+|   |   |--- atemp_t-1 >  0.17
+|   |   |   |--- class: False
+|   |--- hr_t-1 >  0.63
+|   |   |--- weekday_t-1 <= 0.75
+|   |   |   |--- cnt_t-1 <= 0.05
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt_t-1 >  0.05
+|   |   |   |   |--- class: False
+|   |   |--- weekday_t-1 >  0.75
+|   |   |   |--- class: True
+|--- hr_t >  0.33
+|   |--- hr_t-2 <= 0.28
+|   |   |--- cnt_t-1 <= 0.26
+|   |   |   |--- atemp_t-2 <= 0.27
+|   |   |   |   |--- class: True
+|   |   |   |--- atemp_t-2 >  0.27
+|   |   |   |   |--- class: True
+|   |   |--- cnt_t-1 >  0.26
+|   |   |   |--- class: False
+|   |--- hr_t-2 >  0.28
+|   |   |--- cnt_t-1 <= 0.36
+|   |   |   |--- class: True
+|   |   |--- cnt_t-1 >  0.36
+|   |   |   |--- cnt_t <= 0.22
+|   |   |   |   |--- class: True
+|   |   |   |--- cnt_t >  0.22
+|   |   |   |   |--- class: True
+
+=== SHAP sign of holiday_t ===
+|--- hr_t-2 <= 0.50
+|   |--- workingday_t <= 0.50
+|   |   |--- hr_t <= 0.24
+|   |   |   |--- weekday_t-1 <= 0.92
+|   |   |   |   |--- class: False
+|   |   |   |--- weekday_t-1 >  0.92
+|   |   |   |   |--- class: False
+|   |   |--- hr_t >  0.24
+|   |   |   |--- hum_t <= 0.81
+|   |   |   |   |--- class: True
+|   |   |   |--- hum_t >  0.81
+|   |   |   |   |--- class: True
+|   |--- workingday_t >  0.50
+|   |   |--- hr_t <= 0.37
+|   |   |   |--- class: False
+|   |   |--- hr_t >  0.37
+|   |   |   |--- atemp_t-2 <= 0.22
+|   |   |   |   |--- class: True
+|   |   |   |--- atemp_t-2 >  0.22
+|   |   |   |   |--- class: False
+|--- hr_t-2 >  0.50
+|   |--- weathersit_t-2 <= 0.50
+|   |   |--- holiday_t <= 0.50
+|   |   |   |--- weathersit_t-2 <= 0.17
+|   |   |   |   |--- class: True
+|   |   |   |--- weathersit_t-2 >  0.17
+|   |   |   |   |--- class: True
+|   |   |--- holiday_t >  0.50
+|   |   |   |--- class: False
+|   |--- weathersit_t-2 >  0.50
+|   |   |--- yr_t-2 <= 0.50
+|   |   |   |--- season_t <= 0.50
+|   |   |   |   |--- class: True
+|   |   |   |--- season_t >  0.50
+|   |   |   |   |--- class: False
+|   |   |--- yr_t-2 >  0.50
+|   |   |   |--- class: False
+
+=== SHAP sign of weekday_t ===
+|--- weekday_t-1 <= 0.58
+|   |--- hr_t-1 <= 0.72
+|   |   |--- hr_t-2 <= 0.50
+|   |   |   |--- hr_t-1 <= 0.28
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t-1 >  0.28
+|   |   |   |   |--- class: True
+|   |   |--- hr_t-2 >  0.50
+|   |   |   |--- weekday_t <= 0.42
+|   |   |   |   |--- class: True
+|   |   |   |--- weekday_t >  0.42
+|   |   |   |   |--- class: False
+|   |--- hr_t-1 >  0.72
+|   |   |--- cnt_t-1 <= 0.43
+|   |   |   |--- workingday_t <= 0.50
+|   |   |   |   |--- class: False
+|   |   |   |--- workingday_t >  0.50
+|   |   |   |   |--- class: False
+|   |   |--- cnt_t-1 >  0.43
+|   |   |   |--- weekday_t <= 0.25
+|   |   |   |   |--- class: True
+|   |   |   |--- weekday_t >  0.25
+|   |   |   |   |--- class: True
+|--- weekday_t-1 >  0.58
+|   |--- hr_t <= 0.85
+|   |   |--- workingday_t-2 <= 0.50
+|   |   |   |--- hr_t <= 0.54
+|   |   |   |   |--- class: False
+|   |   |   |--- hr_t >  0.54
+|   |   |   |   |--- class: False
+|   |   |--- workingday_t-2 >  0.50
+|   |   |   |--- cnt_t <= 0.44
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt_t >  0.44
+|   |   |   |   |--- class: False
+|   |--- hr_t >  0.85
+|   |   |--- workingday_t <= 0.50
+|   |   |   |--- class: True
+|   |   |--- workingday_t >  0.50
+|   |   |   |--- hr_t-2 <= 0.85
+|   |   |   |   |--- class: False
+|   |   |   |--- hr_t-2 >  0.85
+|   |   |   |   |--- class: True
+
+=== SHAP sign of weathersit_t ===
+|--- weathersit_t <= 0.17
+|   |--- holiday_t <= 0.50
+|   |   |--- class: True
+|   |--- holiday_t >  0.50
+|   |   |--- class: True
+|--- weathersit_t >  0.17
+|   |--- temp_t <= 0.24
+|   |   |--- hum_t <= 0.62
+|   |   |   |--- class: False
+|   |   |--- hum_t >  0.62
+|   |   |   |--- windspeed_t <= 0.14
+|   |   |   |   |--- class: False
+|   |   |   |--- windspeed_t >  0.14
+|   |   |   |   |--- class: False
+|   |--- temp_t >  0.24
+|   |   |--- hr_t-2 <= 0.11
+|   |   |   |--- temp_t-2 <= 0.59
+|   |   |   |   |--- class: False
+|   |   |   |--- temp_t-2 >  0.59
+|   |   |   |   |--- class: False
+|   |   |--- hr_t-2 >  0.11
+|   |   |   |--- class: False
+
+=== SHAP sign of temp_t ===
+|--- temp_t <= 0.44
+|   |--- hr_t-2 <= 0.24
+|   |   |--- atemp_t <= 0.20
+|   |   |   |--- class: False
+|   |   |--- atemp_t >  0.20
+|   |   |   |--- workingday_t-1 <= 0.50
+|   |   |   |   |--- class: True
+|   |   |   |--- workingday_t-1 >  0.50
+|   |   |   |   |--- class: True
+|   |--- hr_t-2 >  0.24
+|   |   |--- hr_t-1 <= 0.63
+|   |   |   |--- temp_t-1 <= 0.24
+|   |   |   |   |--- class: False
+|   |   |   |--- temp_t-1 >  0.24
+|   |   |   |   |--- class: False
+|   |   |--- hr_t-1 >  0.63
+|   |   |   |--- hum_t-2 <= 0.28
+|   |   |   |   |--- class: False
+|   |   |   |--- hum_t-2 >  0.28
+|   |   |   |   |--- class: False
+|--- temp_t >  0.44
+|   |--- hr_t-1 <= 0.59
+|   |   |--- temp_t-2 <= 0.54
+|   |   |   |--- atemp_t-1 <= 0.48
+|   |   |   |   |--- class: True
+|   |   |   |--- atemp_t-1 >  0.48
+|   |   |   |   |--- class: True
+|   |   |--- temp_t-2 >  0.54
+|   |   |   |--- cnt_t <= 0.35
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt_t >  0.35
+|   |   |   |   |--- class: True
+|   |--- hr_t-1 >  0.59
+|   |   |--- atemp_t <= 0.46
+|   |   |   |--- hr_t <= 0.76
+|   |   |   |   |--- class: False
+|   |   |   |--- hr_t >  0.76
+|   |   |   |   |--- class: False
+|   |   |--- atemp_t >  0.46
+|   |   |   |--- hr_t-2 <= 0.59
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t-2 >  0.59
+|   |   |   |   |--- class: True
+
+=== SHAP sign of atemp_t ===
+|--- temp_t <= 0.50
+|   |--- hr_t-2 <= 0.20
+|   |   |--- yr_t <= 0.50
+|   |   |   |--- hum_t-1 <= 0.55
+|   |   |   |   |--- class: False
+|   |   |   |--- hum_t-1 >  0.55
+|   |   |   |   |--- class: False
+|   |   |--- yr_t >  0.50
+|   |   |   |--- atemp_t <= 0.36
+|   |   |   |   |--- class: False
+|   |   |   |--- atemp_t >  0.36
+|   |   |   |   |--- class: False
+|   |--- hr_t-2 >  0.20
+|   |   |--- cnt_t <= 0.49
+|   |   |   |--- class: False
+|   |   |--- cnt_t >  0.49
+|   |   |   |--- class: False
+|--- temp_t >  0.50
+|   |--- hr_t-2 <= 0.24
+|   |   |--- workingday_t-1 <= 0.50
+|   |   |   |--- hr_t-1 <= 0.15
+|   |   |   |   |--- class: False
+|   |   |   |--- hr_t-1 >  0.15
+|   |   |   |   |--- class: True
+|   |   |--- workingday_t-1 >  0.50
+|   |   |   |--- cnt_t <= 0.26
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt_t >  0.26
+|   |   |   |   |--- class: False
+|   |--- hr_t-2 >  0.24
+|   |   |--- temp_t-1 <= 0.59
+|   |   |   |--- hr_t <= 0.59
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t >  0.59
+|   |   |   |   |--- class: True
+|   |   |--- temp_t-1 >  0.59
+|   |   |   |--- hr_t-1 <= 0.50
+|   |   |   |   |--- class: True
+|   |   |   |--- hr_t-1 >  0.50
+|   |   |   |   |--- class: True
+
+=== SHAP sign of windspeed_t ===
+|--- windspeed_t <= 0.28
+|   |--- windspeed_t <= 0.18
+|   |   |--- hr_t-2 <= 0.93
+|   |   |   |--- weekday_t-1 <= 0.92
+|   |   |   |   |--- class: True
+|   |   |   |--- weekday_t-1 >  0.92
+|   |   |   |   |--- class: True
+|   |   |--- hr_t-2 >  0.93
+|   |   |   |--- windspeed_t <= 0.05
+|   |   |   |   |--- class: False
+|   |   |   |--- windspeed_t >  0.05
+|   |   |   |   |--- class: True
+|   |--- windspeed_t >  0.18
+|   |   |--- workingday_t-2 <= 0.50
+|   |   |   |--- cnt_t <= 0.04
+|   |   |   |   |--- class: True
+|   |   |   |--- cnt_t >  0.04
+|   |   |   |   |--- class: True
+|   |   |--- workingday_t-2 >  0.50
+|   |   |   |--- class: True
+|--- windspeed_t >  0.28
+|   |--- windspeed_t <= 0.32
+|   |   |--- yr_t-1 <= 0.50
+|   |   |   |--- season_t-2 <= 0.50
+|   |   |   |   |--- class: False
+|   |   |   |--- season_t-2 >  0.50
+|   |   |   |   |--- class: False
+|   |   |--- yr_t-1 >  0.50
+|   |   |   |--- hum_t-1 <= 0.63
+|   |   |   |   |--- class: True
+|   |   |   |--- hum_t-1 >  0.63
+|   |   |   |   |--- class: False
+|   |--- windspeed_t >  0.32
+|   |   |--- hr_t <= 0.07
+|   |   |   |--- class: False
+|   |   |--- hr_t >  0.07
+|   |   |   |--- cnt_t-2 <= 0.34
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt_t-2 >  0.34
+|   |   |   |   |--- class: False
+

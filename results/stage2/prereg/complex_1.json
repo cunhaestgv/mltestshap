@@ -1,0 +1,39 @@
+{
+ "scenario": "complex",
+ "rep": 1,
+ "expected": 4,
+ "row": 4,
+ "diagnosis": "complex interaction",
+ "correct": true,
+ "type": "wide",
+ "share_before": 0.9985714285714286,
+ "region_test": 1.0,
+ "err_all": 0.1255598704707828,
+ "local_err_before": 0.1255598704707828,
+ "scores": {
+  "lo": 6.249974831007421e-05,
+  "hi": 0.9996688961982727,
+  "shap_rel": 0.8682970489904056,
+  "share": 0.9985714285714286,
+  "n_margin": 2796.0,
+  "density": 0.9987949867819246,
+  "entropy": 0.947171745658578,
+  "agreement": 0.8716738197424893,
+  "self": 0.0,
+  "self_changes": 1.0,
+  "shallow": 0.0,
+  "deep": 0.36194563662374823,
+  "err_ratio": 0.9987541437149048,
+  "resid_corr": 0.8579759782114069,
+  "partners": ""
+ },
+ "rows_all": {
+  "x1": 4,
+  "x2": 4,
+  "x3": 1,
+  "x4": 1,
+  "x5": 3,
+  "x6": 4,
+  "x7": 4
+ }
+}

@@ -1,0 +1,7 @@
+# Versions used for the results in results/ (Python 3.8, CPU).
+# On a GPU machine, install the matching tensorflow build; results may differ slightly from CPU.
+tensorflow==2.13.1
+shap==0.43.0
+scikit-learn==1.3.2
+numpy==1.24.3
+pandas==2.0.3

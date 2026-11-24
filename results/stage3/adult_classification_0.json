@@ -1,0 +1,51 @@
+{
+ "scenario": "adult",
+ "task": "classification",
+ "rep": 0,
+ "real": true,
+ "signals": {
+  "ratio": 1.8828177452087402,
+  "density": 0.9974368974077488,
+  "disagreement": 0.0616934560239315,
+  "gbm": 0.939198954187323,
+  "outlier_share": 0.0,
+  "prevalence": 0.24787424504756927,
+  "top_share": 1.0,
+  "top_rel": 0.0016456336099543677,
+  "top_feature": 10,
+  "shap_top": 6,
+  "root": 6,
+  "row": 1,
+  "shap_total": 0.47760858044686616,
+  "err_slice": 0.40524882078170776,
+  "sign_agreement": 1.0
+ },
+ "err": {
+  "none": 0.23954268559639552,
+  "ensemble": 0.23933647377985742,
+  "capacity": 0.24027814688564278,
+  "regularize": 0.24019106516592956,
+  "drop_top": 0.23319722854186095,
+  "threshold": 0.1867247518699047,
+  "class_weight": 0.19721052384983004
+ },
+ "slicing": {
+  "lift_tree": 1.9221696853637695,
+  "lift_cluster": 1.8536460399627686
+ },
+ "L1": {
+  "rec": "audit",
+  "regret": null,
+  "hit": null
+ },
+ "L2": {
+  "rec": "audit",
+  "regret": null,
+  "hit": null
+ },
+ "L3": {
+  "rec": "capacity",
+  "regret": 0.22356514406776742,
+  "hit": false
+ }
+}

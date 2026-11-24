@@ -1,0 +1,42 @@
+{
+ "scenario": "noeffect",
+ "rep": 4,
+ "expected": 2,
+ "row": 7,
+ "diagnosis": "unstable training",
+ "correct": false,
+ "type": "wide",
+ "share_before": 0.9975,
+ "region_test": 0.995,
+ "err_all": 0.009797738585646096,
+ "local_err_before": 0.009784791960117525,
+ "scores": {
+  "lo": 0.0013158064102753997,
+  "hi": 0.9970201253890991,
+  "shap_rel": 0.1019594008882733,
+  "share": 0.9975,
+  "n_margin": 2793.0,
+  "density": 0.9989909265860312,
+  "entropy": 0.9638058555635712,
+  "agreement": 0.753311851056212,
+  "self": 0.0,
+  "self_changes": 2.0,
+  "shallow": 0.0,
+  "deep": 0.46867167919799496,
+  "err_ratio": 0.9996511340141296,
+  "resid_corr": 0.9577205539857807,
+  "partners": ""
+ },
+ "rows_all": {
+  "x1": 7,
+  "x2": 2,
+  "x3": 1,
+  "x4": 1,
+  "x5": 1,
+  "x6": 7,
+  "x7": 2
+ },
+ "share_after": null,
+ "local_err_after": 0.010112960885315601,
+ "err_all_after": 0.010113393682478626
+}

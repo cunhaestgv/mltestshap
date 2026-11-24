@@ -1,0 +1,33 @@
+{
+ "scenario": "copy",
+ "rep": 4,
+ "expected": 8,
+ "row": 1,
+ "diagnosis": "sharp boundary",
+ "correct": false,
+ "type": "narrow",
+ "share_before": 0.0,
+ "region_test": 0.0016666666666666668,
+ "err_all": 0.025947412466011763,
+ "local_err_before": 0.09874932159838212,
+ "scores": {
+  "lo": 0.4895666539669037,
+  "hi": 0.4897173047065735,
+  "shap_rel": 2.344063666800824,
+  "share": 0.0
+ },
+ "rows_all": {
+  "x1": 1,
+  "x2": 2,
+  "x3": 1,
+  "x4": 1,
+  "x5": 1,
+  "x6": 2,
+  "x7": 2,
+  "x8": 1
+ },
+ "row_after": 1,
+ "diagnosis_after": "sharp boundary",
+ "share_after": 0.0,
+ "local_err_after": null
+}

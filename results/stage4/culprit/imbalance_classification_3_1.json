@@ -1,0 +1,21 @@
+{
+ "scenario": "imbalance",
+ "task": "classification",
+ "rep": 3,
+ "mult": 1.0,
+ "real": false,
+ "base": 0.05781078221908772,
+ "root": 0,
+ "shap_top": 3,
+ "rule": null,
+ "tried": {
+  "0": {
+   "disc_gain": -1.4412840172378016,
+   "test": 0.30665090197542644
+  },
+  "3": {
+   "disc_gain": -1.3712483975091911,
+   "test": 0.24905446424249966
+  }
+ }
+}

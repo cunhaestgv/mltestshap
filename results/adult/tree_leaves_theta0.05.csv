@@ -1,0 +1,16 @@
+feature,leaf,sign,entropy,samples,rule
+age,3,-1,0.0,851,age <= 0.226 and age <= 0.1849 and age <= 0.1712
+age,5,-1,0.0,44,age <= 0.226 and age <= 0.1849 and age > 0.1712 and education_num <= 0.5667
+age,9,-1,0.0,82,age <= 0.226 and age > 0.1849 and married <= 0.5 and age <= 0.2123
+age,20,1,0.008565196042291898,1387,age > 0.226 and age <= 0.6644 and age > 0.2671 and age <= 0.5959
+hours_per_week,4,-1,0.0,770,hours_per_week <= 0.4235 and married <= 0.5 and capital_gain <= 0.01677 and age <= 0.2534
+hours_per_week,10,-1,0.0,111,hours_per_week <= 0.4235 and married > 0.5 and hours_per_week <= 0.3724 and male > 0.5
+hours_per_week,16,1,0.0,826,hours_per_week > 0.4235 and hours_per_week > 0.4439
+male,8,-1,0.04915669755001399,546,male <= 0.5 and married <= 0.5 and hours_per_week > 0.3214 and age > 0.07534
+male,19,1,0.0,693,male > 0.5 and married <= 0.5 and us_native > 0.5
+male,26,1,0.04484961415137062,203,male > 0.5 and married > 0.5 and age > 0.3904 and hours_per_week > 0.4031
+white,4,-1,0.0,159,white <= 0.5 and gov_employed <= 0.5 and hours_per_week <= 0.4949 and male <= 0.5
+us_native,11,1,0.0,64,white <= 0.5 and married > 0.5 and us_native > 0.5 and age > 0.2808
+us_native,23,1,0.008292595217219248,1439,white > 0.5 and us_native > 0.5 and male > 0.5 and hours_per_week <= 0.5459
+self_employed,13,1,0.0,86,married <= 0.5 and age > 0.3356 and gov_employed > 0.5
+gov_employed,20,1,0.0,145,self_employed > 0.5 and capital_gain <= 0.03274 and hours_per_week <= 0.5357 and age > 0.2945

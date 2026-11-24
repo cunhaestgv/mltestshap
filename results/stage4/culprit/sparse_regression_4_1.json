@@ -1,0 +1,17 @@
+{
+ "scenario": "sparse",
+ "task": "regression",
+ "rep": 4,
+ "mult": 1.0,
+ "real": false,
+ "base": 0.033160168656932436,
+ "root": 0,
+ "shap_top": 0,
+ "rule": null,
+ "tried": {
+  "0": {
+   "disc_gain": -3.2468537798238404,
+   "test": 0.24784668239138566
+  }
+ }
+}

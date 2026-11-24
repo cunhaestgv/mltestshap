@@ -1,0 +1,42 @@
+{
+ "scenario": "noise",
+ "rep": 1,
+ "expected": 5,
+ "row": 3,
+ "diagnosis": "simple interaction",
+ "correct": false,
+ "type": "wide",
+ "share_before": 0.9978571428571429,
+ "region_test": 1.0,
+ "err_all": 0.051072104391331724,
+ "local_err_before": 0.051072104391331724,
+ "scores": {
+  "lo": 0.0009154051076620817,
+  "hi": 0.9992880821228027,
+  "shap_rel": 1.9221934059120362,
+  "share": 0.9978571428571429,
+  "n_margin": 2794.0,
+  "density": 0.9993322483392931,
+  "entropy": 0.9989219287802931,
+  "agreement": 0.9806012884753043,
+  "self": 0.0,
+  "self_changes": 2.0,
+  "shallow": 1.0,
+  "deep": 1.0,
+  "err_ratio": 1.0000767707824707,
+  "resid_corr": 0.9560296585532786,
+  "partners": ""
+ },
+ "rows_all": {
+  "x1": 3,
+  "x2": 4,
+  "x3": 1,
+  "x4": 1,
+  "x5": 1,
+  "x6": 7,
+  "x7": 7
+ },
+ "share_after": 0.9978571428571429,
+ "local_err_after": 0.02502875917752967,
+ "err_all_after": 0.02502875917752967
+}

@@ -1,0 +1,7 @@
+feature,leaf,sign,entropy,samples,rule
+walk_t-2,1,-1,0.0,28,walk_t-2 <= 0.5
+walk_t-2,4,1,0.0,61,walk_t-2 > 0.5 and Weight_Kg_t-1 > 0.1594
+weight_t-1,3,-1,0.0,37,weight_t-1 <= 0.5 and Weight_Kg_t <= 0.5725 and wine_t <= 0.5
+weight_t-1,5,-1,0.0,10,weight_t-1 <= 0.5 and Weight_Kg_t <= 0.5725 and wine_t > 0.5 and calories_t-2 <= 0.1829
+weight_t-1,7,1,0.0,10,weight_t-1 <= 0.5 and Weight_Kg_t > 0.5725
+weight_t-1,9,1,0.0,18,weight_t-1 > 0.5 and Weight_Kg_t <= 0.442

@@ -1,0 +1,51 @@
+{
+ "scenario": "adult",
+ "task": "classification",
+ "rep": 1,
+ "real": true,
+ "signals": {
+  "ratio": 1.8909180164337158,
+  "density": 1.008335375745682,
+  "disagreement": 0.08209259808063507,
+  "gbm": 0.9358658024927994,
+  "outlier_share": 0.0,
+  "prevalence": 0.24787424504756927,
+  "top_share": 0.5658103644026947,
+  "top_rel": 0.007309792110288761,
+  "top_feature": 10,
+  "shap_top": 6,
+  "root": 6,
+  "row": 1,
+  "shap_total": 0.48371739204509695,
+  "err_slice": 0.40525928139686584,
+  "sign_agreement": 1.0
+ },
+ "err": {
+  "none": 0.23341069998907865,
+  "ensemble": 0.23060136450816848,
+  "capacity": 0.2243055895951642,
+  "regularize": 0.2352364842688278,
+  "drop_top": 0.23523452549836613,
+  "threshold": 0.18464740555119372,
+  "class_weight": 0.19021567400479414
+ },
+ "slicing": {
+  "lift_tree": 1.9197293519973755,
+  "lift_cluster": 1.8226512670516968
+ },
+ "L1": {
+  "rec": "audit",
+  "regret": null,
+  "hit": null
+ },
+ "L2": {
+  "rec": "audit",
+  "regret": null,
+  "hit": null
+ },
+ "L3": {
+  "rec": "capacity",
+  "regret": 0.1699073095013472,
+  "hit": false
+ }
+}

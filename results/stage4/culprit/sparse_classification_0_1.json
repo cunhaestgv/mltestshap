@@ -1,0 +1,17 @@
+{
+ "scenario": "sparse",
+ "task": "classification",
+ "rep": 0,
+ "mult": 1.0,
+ "real": false,
+ "base": 0.050769154179319965,
+ "root": 0,
+ "shap_top": 0,
+ "rule": null,
+ "tried": {
+  "0": {
+   "disc_gain": -3.73127388482098,
+   "test": 0.41849620816116556
+  }
+ }
+}

@@ -1,0 +1,483 @@
+=== SHAP sign of season ===
+|--- season <= 0.17
+|   |--- cnt <= 0.00
+|   |   |--- class: False
+|   |--- cnt >  0.00
+|   |   |--- class: False
+|--- season >  0.17
+|   |--- hr <= 0.24
+|   |   |--- season <= 0.50
+|   |   |   |--- hr <= 0.07
+|   |   |   |   |--- class: False
+|   |   |   |--- hr >  0.07
+|   |   |   |   |--- class: True
+|   |   |--- season >  0.50
+|   |   |   |--- class: True
+|   |--- hr >  0.24
+|   |   |--- cnt <= 0.11
+|   |   |   |--- yr <= 0.50
+|   |   |   |   |--- class: True
+|   |   |   |--- yr >  0.50
+|   |   |   |   |--- class: True
+|   |   |--- cnt >  0.11
+|   |   |   |--- class: True
+
+=== SHAP sign of mnth ===
+|--- mnth <= 0.14
+|   |--- yr <= 0.50
+|   |   |--- atemp <= 0.33
+|   |   |   |--- cnt <= 0.01
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt >  0.01
+|   |   |   |   |--- class: False
+|   |   |--- atemp >  0.33
+|   |   |   |--- weekday <= 0.42
+|   |   |   |   |--- class: False
+|   |   |   |--- weekday >  0.42
+|   |   |   |   |--- class: False
+|   |--- yr >  0.50
+|   |   |--- cnt <= 0.01
+|   |   |   |--- weekday <= 0.42
+|   |   |   |   |--- class: True
+|   |   |   |--- weekday >  0.42
+|   |   |   |   |--- class: True
+|   |   |--- cnt >  0.01
+|   |   |   |--- mnth <= 0.05
+|   |   |   |   |--- class: False
+|   |   |   |--- mnth >  0.05
+|   |   |   |   |--- class: False
+|--- mnth >  0.14
+|   |--- mnth <= 0.68
+|   |   |--- mnth <= 0.23
+|   |   |   |--- workingday <= 0.50
+|   |   |   |   |--- class: True
+|   |   |   |--- workingday >  0.50
+|   |   |   |   |--- class: True
+|   |   |--- mnth >  0.23
+|   |   |   |--- mnth <= 0.59
+|   |   |   |   |--- class: True
+|   |   |   |--- mnth >  0.59
+|   |   |   |   |--- class: True
+|   |--- mnth >  0.68
+|   |   |--- workingday <= 0.50
+|   |   |   |--- mnth <= 0.86
+|   |   |   |   |--- class: False
+|   |   |   |--- mnth >  0.86
+|   |   |   |   |--- class: False
+|   |   |--- workingday >  0.50
+|   |   |   |--- cnt <= 0.15
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt >  0.15
+|   |   |   |   |--- class: True
+
+=== SHAP sign of hr ===
+|--- hr <= 0.80
+|   |--- hr <= 0.15
+|   |   |--- cnt <= 0.02
+|   |   |   |--- atemp <= 0.25
+|   |   |   |   |--- class: True
+|   |   |   |--- atemp >  0.25
+|   |   |   |   |--- class: False
+|   |   |--- cnt >  0.02
+|   |   |   |--- hr <= 0.02
+|   |   |   |   |--- class: False
+|   |   |   |--- hr >  0.02
+|   |   |   |   |--- class: False
+|   |--- hr >  0.15
+|   |   |--- cnt <= 0.12
+|   |   |   |--- hr <= 0.20
+|   |   |   |   |--- class: True
+|   |   |   |--- hr >  0.20
+|   |   |   |   |--- class: True
+|   |   |--- cnt >  0.12
+|   |   |   |--- hr <= 0.59
+|   |   |   |   |--- class: True
+|   |   |   |--- hr >  0.59
+|   |   |   |   |--- class: True
+|--- hr >  0.80
+|   |--- hr <= 0.85
+|   |   |--- cnt <= 0.14
+|   |   |   |--- class: False
+|   |   |--- cnt >  0.14
+|   |   |   |--- class: False
+|   |--- hr >  0.85
+|   |   |--- class: False
+
+=== SHAP sign of holiday ===
+|--- hr <= 0.33
+|   |--- workingday <= 0.50
+|   |   |--- yr <= 0.50
+|   |   |   |--- weekday <= 0.08
+|   |   |   |   |--- class: True
+|   |   |   |--- weekday >  0.08
+|   |   |   |   |--- class: True
+|   |   |--- yr >  0.50
+|   |   |   |--- hr <= 0.15
+|   |   |   |   |--- class: True
+|   |   |   |--- hr >  0.15
+|   |   |   |   |--- class: True
+|   |--- workingday >  0.50
+|   |   |--- hr <= 0.07
+|   |   |   |--- weekday <= 0.42
+|   |   |   |   |--- class: True
+|   |   |   |--- weekday >  0.42
+|   |   |   |   |--- class: True
+|   |   |--- hr >  0.07
+|   |   |   |--- atemp <= 0.23
+|   |   |   |   |--- class: False
+|   |   |   |--- atemp >  0.23
+|   |   |   |   |--- class: False
+|--- hr >  0.33
+|   |--- hr <= 0.89
+|   |   |--- holiday <= 0.50
+|   |   |   |--- hum <= 0.75
+|   |   |   |   |--- class: True
+|   |   |   |--- hum >  0.75
+|   |   |   |   |--- class: True
+|   |   |--- holiday >  0.50
+|   |   |   |--- class: False
+|   |--- hr >  0.89
+|   |   |--- workingday <= 0.50
+|   |   |   |--- temp <= 0.27
+|   |   |   |   |--- class: True
+|   |   |   |--- temp >  0.27
+|   |   |   |   |--- class: True
+|   |   |--- workingday >  0.50
+|   |   |   |--- atemp <= 0.30
+|   |   |   |   |--- class: True
+|   |   |   |--- atemp >  0.30
+|   |   |   |   |--- class: False
+
+=== SHAP sign of weekday ===
+|--- weekday <= 0.42
+|   |--- hr <= 0.24
+|   |   |--- hr <= 0.02
+|   |   |   |--- class: False
+|   |   |--- hr >  0.02
+|   |   |   |--- hr <= 0.07
+|   |   |   |   |--- class: True
+|   |   |   |--- hr >  0.07
+|   |   |   |   |--- class: False
+|   |--- hr >  0.24
+|   |   |--- hr <= 0.76
+|   |   |   |--- hr <= 0.63
+|   |   |   |   |--- class: False
+|   |   |   |--- hr >  0.63
+|   |   |   |   |--- class: False
+|   |   |--- hr >  0.76
+|   |   |   |--- mnth <= 0.86
+|   |   |   |   |--- class: False
+|   |   |   |--- mnth >  0.86
+|   |   |   |   |--- class: False
+|--- weekday >  0.42
+|   |--- hr <= 0.07
+|   |   |--- cnt <= 0.03
+|   |   |   |--- windspeed <= 0.18
+|   |   |   |   |--- class: False
+|   |   |   |--- windspeed >  0.18
+|   |   |   |   |--- class: False
+|   |   |--- cnt >  0.03
+|   |   |   |--- class: False
+|   |--- hr >  0.07
+|   |   |--- hr <= 0.72
+|   |   |   |--- cnt <= 0.03
+|   |   |   |   |--- class: True
+|   |   |   |--- cnt >  0.03
+|   |   |   |   |--- class: True
+|   |   |--- hr >  0.72
+|   |   |   |--- weekday <= 0.58
+|   |   |   |   |--- class: False
+|   |   |   |--- weekday >  0.58
+|   |   |   |   |--- class: True
+
+=== SHAP sign of workingday ===
+|--- workingday <= 0.50
+|   |--- hr <= 0.28
+|   |   |--- hr <= 0.07
+|   |   |   |--- hr <= 0.02
+|   |   |   |   |--- class: False
+|   |   |   |--- hr >  0.02
+|   |   |   |   |--- class: False
+|   |   |--- hr >  0.07
+|   |   |   |--- season <= 0.17
+|   |   |   |   |--- class: False
+|   |   |   |--- season >  0.17
+|   |   |   |   |--- class: True
+|   |--- hr >  0.28
+|   |   |--- holiday <= 0.50
+|   |   |   |--- hr <= 0.33
+|   |   |   |   |--- class: False
+|   |   |   |--- hr >  0.33
+|   |   |   |   |--- class: False
+|   |   |--- holiday >  0.50
+|   |   |   |--- hr <= 0.63
+|   |   |   |   |--- class: True
+|   |   |   |--- hr >  0.63
+|   |   |   |   |--- class: False
+|--- workingday >  0.50
+|   |--- hr <= 0.67
+|   |   |--- hr <= 0.33
+|   |   |   |--- hr <= 0.07
+|   |   |   |   |--- class: True
+|   |   |   |--- hr >  0.07
+|   |   |   |   |--- class: True
+|   |   |--- hr >  0.33
+|   |   |   |--- hum <= 0.80
+|   |   |   |   |--- class: False
+|   |   |   |--- hum >  0.80
+|   |   |   |   |--- class: False
+|   |--- hr >  0.67
+|   |   |--- cnt <= 0.63
+|   |   |   |--- class: True
+|   |   |--- cnt >  0.63
+|   |   |   |--- class: True
+
+=== SHAP sign of weathersit ===
+|--- weathersit <= 0.17
+|   |--- holiday <= 0.50
+|   |   |--- hr <= 0.07
+|   |   |   |--- atemp <= 0.52
+|   |   |   |   |--- class: True
+|   |   |   |--- atemp >  0.52
+|   |   |   |   |--- class: True
+|   |   |--- hr >  0.07
+|   |   |   |--- cnt <= 0.09
+|   |   |   |   |--- class: True
+|   |   |   |--- cnt >  0.09
+|   |   |   |   |--- class: True
+|   |--- holiday >  0.50
+|   |   |--- class: True
+|--- weathersit >  0.17
+|   |--- hr <= 0.33
+|   |   |--- weathersit <= 0.50
+|   |   |   |--- hum <= 0.56
+|   |   |   |   |--- class: False
+|   |   |   |--- hum >  0.56
+|   |   |   |   |--- class: False
+|   |   |--- weathersit >  0.50
+|   |   |   |--- class: False
+|   |--- hr >  0.33
+|   |   |--- windspeed <= 0.11
+|   |   |   |--- yr <= 0.50
+|   |   |   |   |--- class: False
+|   |   |   |--- yr >  0.50
+|   |   |   |   |--- class: False
+|   |   |--- windspeed >  0.11
+|   |   |   |--- weekday <= 0.42
+|   |   |   |   |--- class: False
+|   |   |   |--- weekday >  0.42
+|   |   |   |   |--- class: False
+
+=== SHAP sign of temp ===
+|--- temp <= 0.46
+|   |--- temp <= 0.37
+|   |   |--- hr <= 0.20
+|   |   |   |--- atemp <= 0.31
+|   |   |   |   |--- class: False
+|   |   |   |--- atemp >  0.31
+|   |   |   |   |--- class: False
+|   |   |--- hr >  0.20
+|   |   |   |--- class: False
+|   |--- temp >  0.37
+|   |   |--- hr <= 0.28
+|   |   |   |--- atemp <= 0.42
+|   |   |   |   |--- class: False
+|   |   |   |--- atemp >  0.42
+|   |   |   |   |--- class: True
+|   |   |--- hr >  0.28
+|   |   |   |--- temp <= 0.44
+|   |   |   |   |--- class: False
+|   |   |   |--- temp >  0.44
+|   |   |   |   |--- class: False
+|--- temp >  0.46
+|   |--- atemp <= 0.48
+|   |   |--- hr <= 0.72
+|   |   |   |--- cnt <= 0.06
+|   |   |   |   |--- class: True
+|   |   |   |--- cnt >  0.06
+|   |   |   |   |--- class: True
+|   |   |--- hr >  0.72
+|   |   |   |--- windspeed <= 0.21
+|   |   |   |   |--- class: True
+|   |   |   |--- windspeed >  0.21
+|   |   |   |   |--- class: True
+|   |--- atemp >  0.48
+|   |   |--- hr <= 0.63
+|   |   |   |--- hr <= 0.07
+|   |   |   |   |--- class: True
+|   |   |   |--- hr >  0.07
+|   |   |   |   |--- class: True
+|   |   |--- hr >  0.63
+|   |   |   |--- temp <= 0.86
+|   |   |   |   |--- class: True
+|   |   |   |--- temp >  0.86
+|   |   |   |   |--- class: True
+
+=== SHAP sign of atemp ===
+|--- temp <= 0.46
+|   |--- hr <= 0.59
+|   |   |--- temp <= 0.37
+|   |   |   |--- temp <= 0.22
+|   |   |   |   |--- class: False
+|   |   |   |--- temp >  0.22
+|   |   |   |   |--- class: False
+|   |   |--- temp >  0.37
+|   |   |   |--- workingday <= 0.50
+|   |   |   |   |--- class: False
+|   |   |   |--- workingday >  0.50
+|   |   |   |   |--- class: True
+|   |--- hr >  0.59
+|   |   |--- class: False
+|--- temp >  0.46
+|   |--- cnt <= 0.06
+|   |   |--- atemp <= 0.58
+|   |   |   |--- temp <= 0.54
+|   |   |   |   |--- class: False
+|   |   |   |--- temp >  0.54
+|   |   |   |   |--- class: True
+|   |   |--- atemp >  0.58
+|   |   |   |--- cnt <= 0.03
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt >  0.03
+|   |   |   |   |--- class: True
+|   |--- cnt >  0.06
+|   |   |--- temp <= 0.48
+|   |   |   |--- hr <= 0.63
+|   |   |   |   |--- class: True
+|   |   |   |--- hr >  0.63
+|   |   |   |   |--- class: False
+|   |   |--- temp >  0.48
+|   |   |   |--- temp <= 0.76
+|   |   |   |   |--- class: True
+|   |   |   |--- temp >  0.76
+|   |   |   |   |--- class: True
+
+=== SHAP sign of hum ===
+|--- hum <= 0.63
+|   |--- hum <= 0.56
+|   |   |--- hr <= 0.59
+|   |   |   |--- workingday <= 0.50
+|   |   |   |   |--- class: True
+|   |   |   |--- workingday >  0.50
+|   |   |   |   |--- class: True
+|   |   |--- hr >  0.59
+|   |   |   |--- hum <= 0.34
+|   |   |   |   |--- class: True
+|   |   |   |--- hum >  0.34
+|   |   |   |   |--- class: True
+|   |--- hum >  0.56
+|   |   |--- hr <= 0.89
+|   |   |   |--- cnt <= 0.27
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt >  0.27
+|   |   |   |   |--- class: True
+|   |   |--- hr >  0.89
+|   |   |   |--- class: True
+|--- hum >  0.63
+|   |--- hum <= 0.74
+|   |   |--- hum <= 0.68
+|   |   |   |--- temp <= 0.44
+|   |   |   |   |--- class: False
+|   |   |   |--- temp >  0.44
+|   |   |   |   |--- class: False
+|   |   |--- hum >  0.68
+|   |   |   |--- weathersit <= 0.17
+|   |   |   |   |--- class: False
+|   |   |   |--- weathersit >  0.17
+|   |   |   |   |--- class: False
+|   |--- hum >  0.74
+|   |   |--- hr <= 0.46
+|   |   |   |--- hum <= 0.89
+|   |   |   |   |--- class: False
+|   |   |   |--- hum >  0.89
+|   |   |   |   |--- class: False
+|   |   |--- hr >  0.46
+|   |   |   |--- cnt <= 0.26
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt >  0.26
+|   |   |   |   |--- class: False
+
+=== SHAP sign of windspeed ===
+|--- windspeed <= 0.28
+|   |--- windspeed <= 0.25
+|   |   |--- hr <= 0.07
+|   |   |   |--- windspeed <= 0.05
+|   |   |   |   |--- class: False
+|   |   |   |--- windspeed >  0.05
+|   |   |   |   |--- class: True
+|   |   |--- hr >  0.07
+|   |   |   |--- windspeed <= 0.21
+|   |   |   |   |--- class: True
+|   |   |   |--- windspeed >  0.21
+|   |   |   |   |--- class: True
+|   |--- windspeed >  0.25
+|   |   |--- atemp <= 0.60
+|   |   |   |--- temp <= 0.41
+|   |   |   |   |--- class: False
+|   |   |   |--- temp >  0.41
+|   |   |   |   |--- class: True
+|   |   |--- atemp >  0.60
+|   |   |   |--- weekday <= 0.42
+|   |   |   |   |--- class: True
+|   |   |   |--- weekday >  0.42
+|   |   |   |   |--- class: True
+|--- windspeed >  0.28
+|   |--- windspeed <= 0.37
+|   |   |--- windspeed <= 0.32
+|   |   |   |--- temp <= 0.46
+|   |   |   |   |--- class: False
+|   |   |   |--- temp >  0.46
+|   |   |   |   |--- class: False
+|   |   |--- windspeed >  0.32
+|   |   |   |--- cnt <= 0.11
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt >  0.11
+|   |   |   |   |--- class: False
+|   |--- windspeed >  0.37
+|   |   |--- windspeed <= 0.44
+|   |   |   |--- hr <= 0.20
+|   |   |   |   |--- class: False
+|   |   |   |--- hr >  0.20
+|   |   |   |   |--- class: False
+|   |   |--- windspeed >  0.44
+|   |   |   |--- class: False
+
+=== SHAP sign of cnt ===
+|--- cnt <= 0.16
+|   |--- cnt <= 0.09
+|   |   |--- cnt <= 0.09
+|   |   |   |--- class: False
+|   |   |--- cnt >  0.09
+|   |   |   |--- class: False
+|   |--- cnt >  0.09
+|   |   |--- hr <= 0.33
+|   |   |   |--- hum <= 0.73
+|   |   |   |   |--- class: True
+|   |   |   |--- hum >  0.73
+|   |   |   |   |--- class: True
+|   |   |--- hr >  0.33
+|   |   |   |--- cnt <= 0.14
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt >  0.14
+|   |   |   |   |--- class: False
+|--- cnt >  0.16
+|   |--- cnt <= 0.25
+|   |   |--- hr <= 0.41
+|   |   |   |--- cnt <= 0.22
+|   |   |   |   |--- class: False
+|   |   |   |--- cnt >  0.22
+|   |   |   |   |--- class: True
+|   |   |--- hr >  0.41
+|   |   |   |--- cnt <= 0.18
+|   |   |   |   |--- class: True
+|   |   |   |--- cnt >  0.18
+|   |   |   |   |--- class: True
+|   |--- cnt >  0.25
+|   |   |--- atemp <= 0.36
+|   |   |   |--- cnt <= 0.29
+|   |   |   |   |--- class: True
+|   |   |   |--- cnt >  0.29
+|   |   |   |   |--- class: True
+|   |   |--- atemp >  0.36
+|   |   |   |--- class: True
+

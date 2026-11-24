@@ -1,0 +1,17 @@
+{
+ "scenario": "adult",
+ "task": "classification",
+ "rep": 2,
+ "mult": 1.0,
+ "real": true,
+ "base": 0.23879621153143518,
+ "root": 6,
+ "shap_top": 6,
+ "rule": null,
+ "tried": {
+  "6": {
+   "disc_gain": -0.1682530142177496,
+   "test": 0.2863026338949652
+  }
+ }
+}

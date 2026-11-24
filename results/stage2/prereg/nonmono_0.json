@@ -1,0 +1,39 @@
+{
+ "scenario": "nonmono",
+ "rep": 0,
+ "expected": 9,
+ "row": 3,
+ "diagnosis": "simple interaction",
+ "correct": false,
+ "type": "wide",
+ "share_before": 0.40035714285714286,
+ "region_test": 0.42333333333333334,
+ "err_all": 0.03483929784759183,
+ "local_err_before": 0.039978904697168756,
+ "scores": {
+  "lo": 0.29362374544143677,
+  "hi": 0.7021782994270325,
+  "shap_rel": 3.4824367619223233,
+  "share": 0.40035714285714286,
+  "n_margin": 1121.0,
+  "density": 0.9797203999445111,
+  "entropy": 0.03415053913917998,
+  "agreement": 0.9946476360392507,
+  "self": 0.9803746654772525,
+  "self_changes": 0.0,
+  "shallow": 0.9803746654772525,
+  "deep": 0.9803746654772525,
+  "err_ratio": 1.1451828479766846,
+  "resid_corr": 0.9211210400395465,
+  "partners": ""
+ },
+ "rows_all": {
+  "x1": 3,
+  "x2": 2,
+  "x3": 1,
+  "x4": 1,
+  "x5": 1,
+  "x6": 2,
+  "x7": 2
+ }
+}

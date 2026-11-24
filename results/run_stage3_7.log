@@ -1,0 +1,15 @@
+22:29:21 noeffect classification #2: {'L1': 'audit', 'L2': 'audit', 'L3': 'capacity'} (1488s)
+22:32:12 sharp classification #0: {'L1': 'capacity', 'L2': 'capacity', 'L3': 'capacity'} (171s)
+22:32:59 inter regression #3: {'L1': 'robust', 'L2': 'robust', 'L3': 'robust'} (47s)
+22:34:47 complex regression #1: {'L1': 'audit', 'L2': 'audit', 'L3': 'capacity'} (108s)
+23:01:30 complex classification #4: {'L1': 'none', 'L2': 'none', 'L3': 'none'} (1603s)
+10:07:44 nonmono classification #2: {'L1': 'capacity', 'L2': 'capacity', 'L3': 'capacity'} (62s)
+10:09:04 missing classification #0: {'L1': 'audit', 'L2': 'audit', 'L3': 'capacity'} (81s)
+10:09:58 noise regression #3: {'L1': 'robust', 'L2': 'robust', 'L3': 'robust'} (54s)
+10:10:54 sparse regression #1: {'L1': 'robust', 'L2': 'robust', 'L3': 'robust'} (56s)
+10:11:43 sparse classification #4: {'L1': 'more_data', 'L2': 'more_data', 'L3': 'capacity'} (49s)
+10:12:00 unstable classification #2: {'L1': 'capacity', 'L2': 'capacity', 'L3': 'capacity'} (17s)
+10:12:48 spurious classification #0: {'L1': 'more_data', 'L2': 'more_data', 'L3': 'capacity'} (48s)
+10:13:29 outliers regression #3: {'L1': 'robust', 'L2': 'robust', 'L3': 'robust'} (41s)
+Traceback (most recent call last):
+IndexError: boolean index did not match indexed array along dimension 0; dimension is 7530 but corresponding boolean dimension is 1000

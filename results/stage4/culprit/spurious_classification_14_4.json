@@ -1,0 +1,17 @@
+{
+ "scenario": "spurious",
+ "task": "classification",
+ "rep": 14,
+ "mult": 4.0,
+ "real": false,
+ "base": 0.02493860379695475,
+ "root": 0,
+ "shap_top": 0,
+ "rule": null,
+ "tried": {
+  "0": {
+   "disc_gain": -6.511755627954829,
+   "test": 0.46846548643588815
+  }
+ }
+}

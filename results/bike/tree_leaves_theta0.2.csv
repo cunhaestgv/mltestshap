@@ -1,0 +1,120 @@
+feature,leaf,sign,entropy,samples,rule
+season_t-2,2,-1,0.0,985,season_t-1 <= 0.5 and season_t-2 <= 0.1667
+season_t-2,5,-1,0.0,302,season_t-1 <= 0.5 and season_t-2 > 0.1667 and cnt_t <= 0.1736 and cnt_t-1 <= 0.08316
+season_t-2,9,-1,0.12741851179235877,57,season_t-1 <= 0.5 and season_t-2 > 0.1667 and cnt_t > 0.1736 and hr_t-2 > 0.7609
+season_t-2,10,1,0.0,1081,season_t-1 > 0.5
+mnth_t-2,3,-1,0.0,795,mnth_t-2 <= 0.2273 and cnt_t-1 <= 0.1993 and cnt_t-1 <= 0.1815
+mnth_t-2,15,-1,0.0,109,mnth_t-2 > 0.2273 and mnth_t-2 <= 0.3182 and cnt_t-1 <= 0.1203 and cnt_t-1 <= 0.05492
+mnth_t-2,18,1,0.0574590202894357,151,mnth_t-2 > 0.2273 and mnth_t-2 <= 0.3182 and cnt_t-1 > 0.1203 and hr_t-2 <= 0.7609
+mnth_t-2,22,1,0.16000104274129628,1155,mnth_t-2 > 0.2273 and mnth_t-2 > 0.3182 and cnt_t-1 <= 0.2945 and yr_t-2 <= 0.5
+mnth_t-2,25,1,0.09054385326964295,174,mnth_t-2 > 0.2273 and mnth_t-2 > 0.3182 and cnt_t-1 > 0.2945 and mnth_t-2 <= 0.5909
+hr_t-2,4,1,0.0,496,hr_t-1 <= 0.7609 and cnt_t-2 <= 0.03504 and hr_t-2 <= 0.413 and cnt_t-2 <= 0.01831
+hr_t-2,14,-1,0.0,769,hr_t-1 > 0.7609
+holiday_t-2,4,1,0.05484605693295557,479,hr_t-1 <= 0.7174 and cnt_t <= 0.2463 and holiday_t-2 <= 0.5 and hr_t-2 <= 0.1522
+holiday_t-2,13,1,0.0,269,hr_t-1 <= 0.7174 and cnt_t > 0.2463 and hr_t > 0.3261 and workingday_t-2 > 0.5
+holiday_t-2,28,-1,0.0,442,hr_t-1 > 0.7174 and workingday_t-1 > 0.5 and hr_t-1 > 0.7609 and atemp_t-1 > 0.2955
+weekday_t-2,3,-1,0.0,190,weekday_t-2 <= 0.08333 and cnt_t <= 0.1104 and cnt_t-2 <= 0.1339
+weekday_t-2,8,1,0.0,40,weekday_t-2 <= 0.08333 and cnt_t > 0.1104 and hr_t <= 0.5435 and atemp_t-1 > 0.4166
+weekday_t-2,22,1,0.0,209,weekday_t-2 > 0.08333 and weekday_t-1 > 0.9167 and cnt_t-1 <= 0.1438 and cnt_t-1 <= 0.1088
+workingday_t-2,7,1,0.0,63,workingday_t-2 <= 0.5 and hr_t-2 <= 0.2391 and season_t-2 > 0.1667 and weekday_t-2 <= 0.08333
+workingday_t-2,12,-1,0.0,582,workingday_t-2 <= 0.5 and hr_t-2 > 0.2391 and holiday_t-2 <= 0.5 and hr_t-1 > 0.3261
+workingday_t-2,15,-1,0.18312206830137276,36,workingday_t-2 <= 0.5 and hr_t-2 > 0.2391 and holiday_t-2 > 0.5 and hr_t > 0.587
+workingday_t-2,18,1,0.0,510,workingday_t-2 > 0.5 and hr_t-2 <= 0.587 and hr_t-1 <= 0.2826
+workingday_t-2,22,1,0.0,883,workingday_t-2 > 0.5 and hr_t-2 > 0.587
+weathersit_t-2,7,-1,0.0,211,weathersit_t-2 <= 0.1667 and workingday_t <= 0.5 and cnt_t-1 > 0.1355 and yr_t-2 <= 0.5
+weathersit_t-2,11,1,0.017783851361743246,600,weathersit_t-2 <= 0.1667 and workingday_t > 0.5 and hr_t-2 <= 0.5 and cnt_t-1 <= 0.4205
+weathersit_t-2,23,1,0.0,82,weathersit_t-2 > 0.1667 and workingday_t <= 0.5 and cnt_t-1 > 0.1161 and cnt_t-1 > 0.1799
+temp_t-2,5,-1,0.0,613,temp_t-2 <= 0.4574 and cnt_t-1 <= 0.1145 and atemp_t-2 <= 0.356 and hum_t > 0.395
+temp_t-2,15,1,0.0,65,temp_t-2 <= 0.4574 and cnt_t-1 > 0.1145 and temp_t-2 > 0.3511 and cnt_t-1 > 0.3499
+temp_t-2,19,1,0.0,61,temp_t-2 > 0.4574 and cnt_t-1 <= 0.2558 and atemp_t-2 <= 0.4621 and windspeed_t-2 <= 0.3158
+temp_t-2,22,1,0.0,922,temp_t-2 > 0.4574 and cnt_t-1 <= 0.2558 and atemp_t-2 > 0.4621 and atemp_t-2 <= 0.7803
+temp_t-2,26,1,0.09377790984777166,250,temp_t-2 > 0.4574 and cnt_t-1 > 0.2558 and atemp_t-1 <= 0.6439 and temp_t-1 <= 0.6489
+atemp_t-2,5,-1,0.07201647168541384,575,temp_t <= 0.4149 and cnt_t-1 <= 0.1187 and temp_t <= 0.3511 and weekday_t > 0.08333
+atemp_t-2,15,-1,0.0,129,temp_t <= 0.4149 and cnt_t-1 > 0.1187 and hr_t-2 > 0.587 and workingday_t-2 > 0.5
+atemp_t-2,23,1,0.09012149251145249,350,temp_t > 0.4149 and temp_t <= 0.7553 and atemp_t-2 > 0.4773 and hr_t-1 > 0.7609
+hum_t-2,5,-1,0.0,96,cnt_t-2 <= 0.02667 and hum_t-2 <= 0.715 and cnt_t-2 <= 0.005753 and hum_t > 0.505
+hum_t-2,14,-1,0.07001205049536138,119,cnt_t-2 <= 0.02667 and hum_t-2 > 0.715 and cnt_t > 0.02667 and hum_t-1 <= 0.935
+windspeed_t-2,12,1,0.0,349,windspeed_t-2 <= 0.2456 and hr_t-2 > 0.5 and windspeed_t-2 <= 0.2105 and hr_t-1 > 0.7609
+windspeed_t-2,15,1,0.09054385326964295,87,windspeed_t-2 <= 0.2456 and hr_t-2 > 0.5 and windspeed_t-2 > 0.2105 and cnt_t-1 > 0.1553
+windspeed_t-2,27,-1,0.0,271,windspeed_t-2 > 0.2456 and hr_t-2 > 0.7174 and temp_t-2 <= 0.734 and windspeed_t-2 > 0.2807
+cnt_t-2,4,-1,0.0,69,hr_t-2 <= 0.2391 and workingday_t <= 0.5 and yr_t <= 0.5 and weekday_t-1 <= 0.08333
+cnt_t-2,11,1,0.0,426,hr_t-2 <= 0.2391 and workingday_t > 0.5 and cnt_t-1 <= 0.1072 and cnt_t-1 <= 0.03504
+cnt_t-2,18,-1,0.0227451841252996,1353,hr_t-2 > 0.2391 and cnt_t-2 <= 0.2746 and cnt_t-1 <= 0.4106 and cnt_t-1 > 0.04969
+cnt_t-2,26,1,0.07050175960541472,236,hr_t-2 > 0.2391 and cnt_t-2 > 0.2746 and cnt_t-1 > 0.3468 and cnt_t-2 > 0.3666
+season_t-1,5,1,0.08767448304838818,181,season_t-1 <= 0.5 and season_t-1 <= 0.1667 and hr_t <= 0.2826 and workingday_t-1 > 0.5
+season_t-1,11,-1,0.0,771,season_t-1 <= 0.5 and season_t-1 > 0.1667 and cnt_t <= 0.4346 and cnt_t <= 0.3865
+season_t-1,14,-1,0.15935006268563445,43,season_t-1 <= 0.5 and season_t-1 > 0.1667 and cnt_t > 0.4346 and cnt_t-2 <= 0.2746
+season_t-1,19,1,0.0,32,season_t-1 > 0.5 and hr_t <= 0.2826 and workingday_t <= 0.5 and hr_t-2 <= 0.06522
+season_t-1,22,-1,0.0,189,season_t-1 > 0.5 and hr_t <= 0.2826 and workingday_t > 0.5 and hr_t <= 0.2391
+season_t-1,30,1,0.0,549,season_t-1 > 0.5 and hr_t > 0.2826 and weekday_t > 0.08333 and cnt_t > 0.1135
+yr_t-1,4,-1,0.0,391,yr_t-2 <= 0.5 and workingday_t-1 <= 0.5 and hr_t-2 <= 0.6739 and hr_t <= 0.6739
+yr_t-1,11,-1,0.0,32,yr_t-2 <= 0.5 and workingday_t-1 > 0.5 and hr_t <= 0.02174 and cnt_t-1 <= 0.07218
+yr_t-1,13,-1,0.0,1384,yr_t-2 <= 0.5 and workingday_t-1 > 0.5 and hr_t > 0.02174
+yr_t-1,16,1,0.0,126,yr_t-2 > 0.5 and workingday_t <= 0.5 and hr_t-2 <= 0.5
+yr_t-1,22,1,0.0,426,yr_t-2 > 0.5 and workingday_t > 0.5 and cnt_t-2 <= 0.6036 and hr_t-1 <= 0.7174
+hr_t-1,12,1,0.11841920478350497,1374,hr_t-1 <= 0.7174 and hr_t-2 > 0.1087 and hr_t-1 <= 0.6304 and hr_t-2 > 0.1522
+hr_t-1,21,-1,0.0,60,hr_t-1 > 0.7174 and hr_t <= 0.7391 and workingday_t-1 > 0.5 and temp_t-1 > 0.3936
+hr_t-1,24,-1,0.0,730,hr_t-1 > 0.7174 and hr_t > 0.7391 and cnt_t > 0.03086
+holiday_t-1,4,1,0.14905143775162263,234,hr_t-2 <= 0.7174 and workingday_t <= 0.5 and holiday_t-2 <= 0.5 and hr_t-1 <= 0.3261
+holiday_t-1,6,-1,0.0,58,hr_t-2 <= 0.7174 and workingday_t <= 0.5 and holiday_t-2 > 0.5
+holiday_t-1,9,1,0.0,984,hr_t-2 <= 0.7174 and workingday_t > 0.5 and cnt_t <= 0.2327 and hr_t <= 0.7174
+holiday_t-1,13,1,0.04816006495679805,373,hr_t-2 <= 0.7174 and workingday_t > 0.5 and cnt_t > 0.2327 and hr_t-2 > 0.2391
+holiday_t-1,21,1,0.0,33,hr_t-2 > 0.7174 and temp_t <= 0.4787 and weekday_t-1 > 0.9167 and hr_t > 0.8913
+holiday_t-1,26,1,0.0,53,hr_t-2 > 0.7174 and temp_t > 0.4787 and cnt_t-1 > 0.4263
+weekday_t-1,4,-1,0.03376725076727819,284,weekday_t-1 <= 0.5833 and weekday_t-1 <= 0.08333 and hr_t <= 0.8478 and hr_t-2 <= 0.6739
+weekday_t-1,11,-1,0.0,480,weekday_t-1 <= 0.5833 and weekday_t-1 > 0.08333 and cnt_t-2 <= 0.1187 and cnt_t-1 <= 0.08944
+weekday_t-1,13,-1,0.0,680,weekday_t-1 <= 0.5833 and weekday_t-1 > 0.08333 and cnt_t-2 > 0.1187
+weekday_t-1,16,1,0.0,954,weekday_t-1 > 0.5833 and hr_t-1 <= 0.8913 and mnth_t-2 <= 0.8636
+weekday_t-1,19,1,0.0,88,weekday_t-1 > 0.5833 and hr_t-1 <= 0.8913 and mnth_t-2 > 0.8636 and workingday_t-2 > 0.5
+weekday_t-1,25,1,0.0,72,weekday_t-1 > 0.5833 and hr_t-1 > 0.8913 and workingday_t-1 > 0.5 and hr_t-2 <= 0.9348
+weathersit_t-1,11,1,0.18927843126120164,138,atemp_t-1 <= 0.6137 and weathersit_t-1 > 0.1667 and hr_t-1 <= 0.1957 and weekday_t-1 <= 0.75
+weathersit_t-1,22,-1,0.09075665143337722,347,atemp_t-1 > 0.6137 and weathersit_t-1 <= 0.1667 and cnt_t-1 > 0.1302 and hr_t <= 0.9348
+weathersit_t-1,25,1,0.0,69,atemp_t-1 > 0.6137 and weathersit_t-1 > 0.1667 and hum_t-1 <= 0.64
+temp_t-1,4,-1,0.0,138,temp_t-1 <= 0.5 and workingday_t-1 <= 0.5 and hr_t-2 <= 0.3696 and hr_t-1 <= 0.2826
+temp_t-1,11,-1,0.0,735,temp_t-1 <= 0.5 and workingday_t-1 > 0.5 and hr_t-2 <= 0.7174 and temp_t-1 <= 0.4787
+temp_t-1,22,1,0.014969137954490877,732,temp_t-1 > 0.5 and hr_t-2 <= 0.8913 and workingday_t-1 > 0.5 and hr_t-2 <= 0.7609
+temp_t-1,26,-1,0.0,77,temp_t-1 > 0.5 and hr_t-2 > 0.8913 and hr_t <= 0.5217 and windspeed_t-2 <= 0.2456
+atemp_t-1,4,1,0.0,49,atemp_t-2 <= 0.5228 and cnt_t-1 <= 0.02563 and atemp_t-2 <= 0.2349 and weekday_t-1 <= 0.4167
+atemp_t-1,7,1,0.030919398857212517,315,atemp_t-2 <= 0.5228 and cnt_t-1 <= 0.02563 and atemp_t-2 > 0.2349 and hr_t-2 <= 0.3696
+atemp_t-1,27,-1,0.1222915970693747,60,atemp_t-2 > 0.5228 and hr_t-2 > 0.6739 and atemp_t-1 <= 0.553 and hr_t-2 > 0.8043
+atemp_t-1,29,-1,0.1485494904303482,47,atemp_t-2 > 0.5228 and hr_t-2 > 0.6739 and atemp_t-1 > 0.553 and hr_t-2 <= 0.7174
+atemp_t-1,30,-1,0.0,252,atemp_t-2 > 0.5228 and hr_t-2 > 0.6739 and atemp_t-1 > 0.553 and hr_t-2 > 0.7174
+windspeed_t-1,12,1,0.0,319,windspeed_t-1 <= 0.2105 and yr_t > 0.5 and hr_t <= 0.8913 and cnt_t > 0.004707
+windspeed_t-1,18,-1,0.0,183,windspeed_t-1 > 0.2105 and yr_t <= 0.5 and windspeed_t-1 <= 0.2456
+windspeed_t-1,24,-1,0.03213925433855834,301,windspeed_t-1 > 0.2105 and yr_t > 0.5 and cnt_t <= 0.4613 and hr_t <= 0.7609
+season_t,3,-1,0.0,555,season_t-1 <= 0.1667 and hum_t-1 <= 0.625 and hum_t-2 <= 0.635
+season_t,4,-1,0.17203694935311378,39,season_t-1 <= 0.1667 and hum_t-1 <= 0.625 and hum_t-2 > 0.635
+season_t,9,-1,0.0,141,season_t-1 <= 0.1667 and hum_t-1 > 0.625 and hr_t-2 > 0.5435
+season_t,12,1,0.0,935,season_t-1 > 0.1667 and mnth_t-2 <= 0.6818 and season_t-2 <= 0.5
+season_t,14,1,0.0,211,season_t-1 > 0.1667 and mnth_t-2 <= 0.6818 and season_t-2 > 0.5 and hum_t-2 <= 0.635
+season_t,21,1,0.0,244,season_t-1 > 0.1667 and mnth_t-2 > 0.6818 and hr_t-2 > 0.587 and weathersit_t-1 <= 0.5
+yr_t,4,1,0.0,883,yr_t-1 <= 0.5 and cnt_t <= 0.3373 and hr_t <= 0.5435 and hr_t-1 <= 0.4565
+yr_t,5,1,0.19499570935361069,166,yr_t-1 <= 0.5 and cnt_t <= 0.3373 and hr_t <= 0.5435 and hr_t-1 > 0.4565
+yr_t,15,-1,0.06722154475830686,125,yr_t-1 <= 0.5 and cnt_t > 0.3373 and hr_t > 0.5 and cnt_t > 0.398
+yr_t,20,-1,0.0,366,yr_t-1 > 0.5 and hr_t <= 0.6304 and cnt_t <= 0.3839 and workingday_t > 0.5
+yr_t,26,1,0.0,129,yr_t-1 > 0.5 and hr_t > 0.6304 and cnt_t-1 > 0.3295
+hr_t,4,-1,0.0,813,hr_t <= 0.3261 and hr_t-1 <= 0.6304 and atemp_t-1 > 0.1742
+hr_t,8,-1,0.0,57,hr_t <= 0.3261 and hr_t-1 > 0.6304 and weekday_t-1 <= 0.75 and cnt_t-1 > 0.04655
+hr_t,13,1,0.0,34,hr_t > 0.3261 and hr_t-2 <= 0.2826 and cnt_t-1 <= 0.2558 and atemp_t-2 <= 0.2652
+hr_t,17,1,0.0,1519,hr_t > 0.3261 and hr_t-2 > 0.2826 and cnt_t-1 <= 0.3614
+hr_t,20,1,0.14080203119692353,352,hr_t > 0.3261 and hr_t-2 > 0.2826 and cnt_t-1 > 0.3614 and cnt_t > 0.2238
+holiday_t,5,-1,0.10215803640865039,75,hr_t-2 <= 0.5 and workingday_t <= 0.5 and hr_t <= 0.2391 and weekday_t-1 > 0.9167
+holiday_t,10,-1,0.0,596,hr_t-2 <= 0.5 and workingday_t > 0.5 and hr_t <= 0.3696
+holiday_t,17,1,0.046673025737726546,968,hr_t-2 > 0.5 and weathersit_t-2 <= 0.5 and holiday_t <= 0.5 and weathersit_t-2 <= 0.1667
+weekday_t,4,1,0.0,414,weekday_t-1 <= 0.5833 and hr_t-1 <= 0.7174 and hr_t-2 <= 0.5 and hr_t-1 <= 0.2826
+weekday_t,11,-1,0.065490821314727,129,weekday_t-1 <= 0.5833 and hr_t-1 > 0.7174 and cnt_t-1 <= 0.4331 and workingday_t <= 0.5
+weekday_t,19,-1,0.04128046811908642,224,weekday_t-1 > 0.5833 and hr_t <= 0.8478 and workingday_t-2 <= 0.5 and hr_t <= 0.5435
+weekday_t,22,-1,0.016226620645663548,667,weekday_t-1 > 0.5833 and hr_t <= 0.8478 and workingday_t-2 > 0.5 and cnt_t <= 0.4409
+weekday_t,25,1,0.0,75,weekday_t-1 > 0.5833 and hr_t > 0.8478 and workingday_t <= 0.5
+temp_t,6,1,0.04580001183260904,198,temp_t <= 0.4362 and hr_t-2 <= 0.2391 and atemp_t > 0.2045 and workingday_t-1 > 0.5
+temp_t,9,-1,0.05128985879995681,173,temp_t <= 0.4362 and hr_t-2 > 0.2391 and hr_t-1 <= 0.6304 and temp_t-1 <= 0.2447
+temp_t,13,-1,0.0,439,temp_t <= 0.4362 and hr_t-2 > 0.2391 and hr_t-1 > 0.6304 and hum_t-2 > 0.275
+temp_t,25,-1,0.0,64,temp_t > 0.4362 and hr_t-1 > 0.587 and atemp_t <= 0.4621 and hr_t > 0.7609
+temp_t,28,1,0.04639138357369902,585,temp_t > 0.4362 and hr_t-1 > 0.587 and atemp_t > 0.4621 and hr_t-2 > 0.587
+atemp_t,5,-1,0.0,195,temp_t <= 0.5 and hr_t-2 <= 0.1957 and yr_t <= 0.5 and hum_t-1 > 0.545
+atemp_t,8,-1,0.0,57,temp_t <= 0.5 and hr_t-2 <= 0.1957 and yr_t > 0.5 and atemp_t > 0.356
+atemp_t,10,-1,0.0,1236,temp_t <= 0.5 and hr_t-2 > 0.1957 and cnt_t <= 0.4948
+atemp_t,18,-1,0.0,177,temp_t > 0.5 and hr_t-2 <= 0.2391 and workingday_t-1 > 0.5 and cnt_t <= 0.2599
+atemp_t,26,1,0.0188762306604249,560,temp_t > 0.5 and hr_t-2 > 0.2391 and temp_t-1 > 0.5851 and hr_t-1 > 0.5
+windspeed_t,12,1,0.045036285093553896,202,windspeed_t <= 0.2807 and windspeed_t > 0.1754 and workingday_t-2 <= 0.5 and cnt_t > 0.04027
+windspeed_t,13,1,0.0,561,windspeed_t <= 0.2807 and windspeed_t > 0.1754 and workingday_t-2 > 0.5

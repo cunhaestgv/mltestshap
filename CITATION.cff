@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper and this replication package."
+title: "Replication package: SHAP-sign partitions as test cases for ML models"
+authors:
+  - family-names: Cunha
+    given-names: Carlos Augusto
+    orcid: "https://orcid.org/0000-0002-2754-5401"
+  - family-names: Pombo
+    given-names: Nuno
+    orcid: "https://orcid.org/0000-0001-7797-8849"
+repository-code: "https://github.com/cunhaestgv/mltestshap"
+version: "1.0.0"
+license: MIT

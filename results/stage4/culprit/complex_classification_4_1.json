@@ -1,0 +1,21 @@
+{
+ "scenario": "complex",
+ "task": "classification",
+ "rep": 4,
+ "mult": 1.0,
+ "real": false,
+ "base": 0.18267581841897065,
+ "root": 5,
+ "shap_top": 3,
+ "rule": null,
+ "tried": {
+  "3": {
+   "disc_gain": -0.2631206598597893,
+   "test": 0.21871191224581435
+  },
+  "5": {
+   "disc_gain": -0.7819719229169312,
+   "test": 0.36265244011090436
+  }
+ }
+}

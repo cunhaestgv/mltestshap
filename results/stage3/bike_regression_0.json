@@ -1,0 +1,50 @@
+{
+ "scenario": "bike",
+ "task": "regression",
+ "rep": 0,
+ "real": true,
+ "signals": {
+  "ratio": 2.9030139446258545,
+  "density": 0.5512521261477517,
+  "disagreement": 0.201422780752182,
+  "gbm": 1.359425936022477,
+  "outlier_share": 0.03642493011017925,
+  "prevalence": 0.5,
+  "top_share": 0.4424234055343559,
+  "top_rel": 1.6808605730426502,
+  "top_feature": 25,
+  "shap_top": 38,
+  "root": 38,
+  "row": 1,
+  "shap_total": 0.8033723310535134,
+  "err_slice": 0.12365533411502838,
+  "sign_agreement": 1.0
+ },
+ "err": {
+  "none": 0.03557758070528507,
+  "ensemble": 0.030792245641350746,
+  "capacity": 0.031210147465268772,
+  "regularize": 0.05289893597364426,
+  "drop_top": 0.03734093904495239,
+  "robust": 0.03440456837415695
+ },
+ "slicing": {
+  "lift_tree": 2.5270111560821533,
+  "lift_cluster": 1.7094709873199463
+ },
+ "L1": {
+  "rec": "robust",
+  "regret": 0.1015336810765661,
+  "hit": false
+ },
+ "L2": {
+  "rec": "robust",
+  "regret": 0.1015336810765661,
+  "hit": false
+ },
+ "L3": {
+  "rec": "robust",
+  "regret": 0.1015336810765661,
+  "hit": false
+ }
+}

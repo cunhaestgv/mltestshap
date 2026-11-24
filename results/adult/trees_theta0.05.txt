@@ -1,0 +1,267 @@
+=== SHAP sign of age ===
+|--- age <= 0.23
+|   |--- age <= 0.18
+|   |   |--- age <= 0.17
+|   |   |   |--- class: False
+|   |   |--- age >  0.17
+|   |   |   |--- education_num <= 0.57
+|   |   |   |   |--- class: False
+|   |   |   |--- education_num >  0.57
+|   |   |   |   |--- class: False
+|   |--- age >  0.18
+|   |   |--- married <= 0.50
+|   |   |   |--- age <= 0.21
+|   |   |   |   |--- class: False
+|   |   |   |--- age >  0.21
+|   |   |   |   |--- class: False
+|   |   |--- married >  0.50
+|   |   |   |--- age <= 0.21
+|   |   |   |   |--- class: False
+|   |   |   |--- age >  0.21
+|   |   |   |   |--- class: True
+|--- age >  0.23
+|   |--- age <= 0.66
+|   |   |--- age <= 0.27
+|   |   |   |--- married <= 0.50
+|   |   |   |   |--- class: False
+|   |   |   |--- married >  0.50
+|   |   |   |   |--- class: True
+|   |   |--- age >  0.27
+|   |   |   |--- age <= 0.60
+|   |   |   |   |--- class: True
+|   |   |   |--- age >  0.60
+|   |   |   |   |--- class: True
+|   |--- age >  0.66
+|   |   |--- age <= 0.72
+|   |   |   |--- class: False
+|   |   |--- age >  0.72
+|   |   |   |--- class: False
+
+=== SHAP sign of hours_per_week ===
+|--- hours_per_week <= 0.42
+|   |--- married <= 0.50
+|   |   |--- capital_gain <= 0.02
+|   |   |   |--- age <= 0.25
+|   |   |   |   |--- class: False
+|   |   |   |--- age >  0.25
+|   |   |   |   |--- class: False
+|   |   |--- capital_gain >  0.02
+|   |   |   |--- class: False
+|   |--- married >  0.50
+|   |   |--- hours_per_week <= 0.37
+|   |   |   |--- male <= 0.50
+|   |   |   |   |--- class: False
+|   |   |   |--- male >  0.50
+|   |   |   |   |--- class: False
+|   |   |--- hours_per_week >  0.37
+|   |   |   |--- education_num <= 0.70
+|   |   |   |   |--- class: False
+|   |   |   |--- education_num >  0.70
+|   |   |   |   |--- class: True
+|--- hours_per_week >  0.42
+|   |--- hours_per_week <= 0.44
+|   |   |--- class: True
+|   |--- hours_per_week >  0.44
+|   |   |--- class: True
+
+=== SHAP sign of male ===
+|--- male <= 0.50
+|   |--- married <= 0.50
+|   |   |--- hours_per_week <= 0.32
+|   |   |   |--- age <= 0.24
+|   |   |   |   |--- class: True
+|   |   |   |--- age >  0.24
+|   |   |   |   |--- class: False
+|   |   |--- hours_per_week >  0.32
+|   |   |   |--- age <= 0.08
+|   |   |   |   |--- class: False
+|   |   |   |--- age >  0.08
+|   |   |   |   |--- class: False
+|   |--- married >  0.50
+|   |   |--- white <= 0.50
+|   |   |   |--- class: False
+|   |   |--- white >  0.50
+|   |   |   |--- education_num <= 0.63
+|   |   |   |   |--- class: True
+|   |   |   |--- education_num >  0.63
+|   |   |   |   |--- class: True
+|--- male >  0.50
+|   |--- married <= 0.50
+|   |   |--- us_native <= 0.50
+|   |   |   |--- age <= 0.16
+|   |   |   |   |--- class: True
+|   |   |   |--- age >  0.16
+|   |   |   |   |--- class: True
+|   |   |--- us_native >  0.50
+|   |   |   |--- class: True
+|   |--- married >  0.50
+|   |   |--- age <= 0.39
+|   |   |   |--- hours_per_week <= 0.45
+|   |   |   |   |--- class: False
+|   |   |   |--- hours_per_week >  0.45
+|   |   |   |   |--- class: True
+|   |   |--- age >  0.39
+|   |   |   |--- hours_per_week <= 0.40
+|   |   |   |   |--- class: True
+|   |   |   |--- hours_per_week >  0.40
+|   |   |   |   |--- class: True
+
+=== SHAP sign of white ===
+|--- white <= 0.50
+|   |--- gov_employed <= 0.50
+|   |   |--- hours_per_week <= 0.49
+|   |   |   |--- male <= 0.50
+|   |   |   |   |--- class: False
+|   |   |   |--- male >  0.50
+|   |   |   |   |--- class: False
+|   |   |--- hours_per_week >  0.49
+|   |   |   |--- class: False
+|   |--- gov_employed >  0.50
+|   |   |--- age <= 0.25
+|   |   |   |--- class: False
+|   |   |--- age >  0.25
+|   |   |   |--- class: True
+|--- white >  0.50
+|   |--- us_native <= 0.50
+|   |   |--- education_num <= 0.57
+|   |   |   |--- age <= 0.36
+|   |   |   |   |--- class: False
+|   |   |   |--- age >  0.36
+|   |   |   |   |--- class: False
+|   |   |--- education_num >  0.57
+|   |   |   |--- class: False
+|   |--- us_native >  0.50
+|   |   |--- hours_per_week <= 0.25
+|   |   |   |--- age <= 0.13
+|   |   |   |   |--- class: False
+|   |   |   |--- age >  0.13
+|   |   |   |   |--- class: True
+|   |   |--- hours_per_week >  0.25
+|   |   |   |--- education_num <= 0.50
+|   |   |   |   |--- class: True
+|   |   |   |--- education_num >  0.50
+|   |   |   |   |--- class: True
+
+=== SHAP sign of us_native ===
+|--- white <= 0.50
+|   |--- married <= 0.50
+|   |   |--- us_native <= 0.50
+|   |   |   |--- class: True
+|   |   |--- us_native >  0.50
+|   |   |   |--- education_num <= 0.57
+|   |   |   |   |--- class: False
+|   |   |   |--- education_num >  0.57
+|   |   |   |   |--- class: False
+|   |--- married >  0.50
+|   |   |--- us_native <= 0.50
+|   |   |   |--- class: True
+|   |   |--- us_native >  0.50
+|   |   |   |--- age <= 0.28
+|   |   |   |   |--- class: True
+|   |   |   |--- age >  0.28
+|   |   |   |   |--- class: True
+|--- white >  0.50
+|   |--- us_native <= 0.50
+|   |   |--- education_num <= 0.23
+|   |   |   |--- class: False
+|   |   |--- education_num >  0.23
+|   |   |   |--- married <= 0.50
+|   |   |   |   |--- class: False
+|   |   |   |--- married >  0.50
+|   |   |   |   |--- class: False
+|   |--- us_native >  0.50
+|   |   |--- male <= 0.50
+|   |   |   |--- gov_employed <= 0.50
+|   |   |   |   |--- class: True
+|   |   |   |--- gov_employed >  0.50
+|   |   |   |   |--- class: False
+|   |   |--- male >  0.50
+|   |   |   |--- hours_per_week <= 0.55
+|   |   |   |   |--- class: True
+|   |   |   |--- hours_per_week >  0.55
+|   |   |   |   |--- class: True
+
+=== SHAP sign of self_employed ===
+|--- married <= 0.50
+|   |--- age <= 0.34
+|   |   |--- gov_employed <= 0.50
+|   |   |   |--- self_employed <= 0.50
+|   |   |   |   |--- class: False
+|   |   |   |--- self_employed >  0.50
+|   |   |   |   |--- class: False
+|   |   |--- gov_employed >  0.50
+|   |   |   |--- age <= 0.18
+|   |   |   |   |--- class: False
+|   |   |   |--- age >  0.18
+|   |   |   |   |--- class: True
+|   |--- age >  0.34
+|   |   |--- gov_employed <= 0.50
+|   |   |   |--- male <= 0.50
+|   |   |   |   |--- class: True
+|   |   |   |--- male >  0.50
+|   |   |   |   |--- class: False
+|   |   |--- gov_employed >  0.50
+|   |   |   |--- class: True
+|--- married >  0.50
+|   |--- self_employed <= 0.50
+|   |   |--- education_num <= 0.43
+|   |   |   |--- education_num <= 0.30
+|   |   |   |   |--- class: False
+|   |   |   |--- education_num >  0.30
+|   |   |   |   |--- class: False
+|   |   |--- education_num >  0.43
+|   |   |   |--- age <= 0.17
+|   |   |   |   |--- class: False
+|   |   |   |--- age >  0.17
+|   |   |   |   |--- class: True
+|   |--- self_employed >  0.50
+|   |   |--- education_num <= 0.57
+|   |   |   |--- hours_per_week <= 0.42
+|   |   |   |   |--- class: False
+|   |   |   |--- hours_per_week >  0.42
+|   |   |   |   |--- class: False
+|   |   |--- education_num >  0.57
+|   |   |   |--- age <= 0.50
+|   |   |   |   |--- class: False
+|   |   |   |--- age >  0.50
+|   |   |   |   |--- class: False
+
+=== SHAP sign of gov_employed ===
+|--- self_employed <= 0.50
+|   |--- male <= 0.50
+|   |   |--- gov_employed <= 0.50
+|   |   |   |--- us_native <= 0.50
+|   |   |   |   |--- class: False
+|   |   |   |--- us_native >  0.50
+|   |   |   |   |--- class: True
+|   |   |--- gov_employed >  0.50
+|   |   |   |--- education_num <= 0.63
+|   |   |   |   |--- class: False
+|   |   |   |--- education_num >  0.63
+|   |   |   |   |--- class: False
+|   |--- male >  0.50
+|   |   |--- married <= 0.50
+|   |   |   |--- age <= 0.36
+|   |   |   |   |--- class: False
+|   |   |   |--- age >  0.36
+|   |   |   |   |--- class: False
+|   |   |--- married >  0.50
+|   |   |   |--- us_native <= 0.50
+|   |   |   |   |--- class: False
+|   |   |   |--- us_native >  0.50
+|   |   |   |   |--- class: True
+|--- self_employed >  0.50
+|   |--- capital_gain <= 0.03
+|   |   |--- hours_per_week <= 0.54
+|   |   |   |--- age <= 0.29
+|   |   |   |   |--- class: True
+|   |   |   |--- age >  0.29
+|   |   |   |   |--- class: True
+|   |   |--- hours_per_week >  0.54
+|   |   |   |--- age <= 0.39
+|   |   |   |   |--- class: True
+|   |   |   |--- age >  0.39
+|   |   |   |   |--- class: True
+|   |--- capital_gain >  0.03
+|   |   |--- class: True
+

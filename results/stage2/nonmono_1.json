@@ -1,0 +1,39 @@
+{
+ "scenario": "nonmono",
+ "rep": 1,
+ "expected": 9,
+ "row": 9,
+ "diagnosis": "non-monotonic effect",
+ "correct": true,
+ "type": "wide",
+ "share_before": 0.40785714285714286,
+ "region_test": 0.37666666666666665,
+ "err_all": 0.03838475406658014,
+ "local_err_before": 0.04756565742991771,
+ "scores": {
+  "lo": 0.29952943325042725,
+  "hi": 0.7080017328262329,
+  "shap_rel": 3.5607370646859877,
+  "share": 0.40785714285714286,
+  "n_margin": 1142.0,
+  "density": 0.9982454721370715,
+  "entropy": 0.018561782718886026,
+  "agreement": 0.9971978984238178,
+  "self": 1.0,
+  "self_changes": 2.0,
+  "shallow": 1.0,
+  "deep": 1.0,
+  "err_ratio": 1.1262282133102417,
+  "resid_corr": 0.933198446883613,
+  "partners": ""
+ },
+ "rows_all": {
+  "x1": 9,
+  "x2": 7,
+  "x3": 1,
+  "x4": 1,
+  "x5": 1,
+  "x6": 2,
+  "x7": 7
+ }
+}

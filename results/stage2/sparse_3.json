@@ -1,0 +1,42 @@
+{
+ "scenario": "sparse",
+ "rep": 3,
+ "expected": 6,
+ "row": 1,
+ "diagnosis": "sharp boundary",
+ "correct": false,
+ "type": "narrow",
+ "share_before": 0.0,
+ "region_test": 0.005,
+ "err_all": 0.03722987579281849,
+ "local_err_before": 0.24606035579976693,
+ "scores": {
+  "lo": 0.4958653450012207,
+  "hi": 0.4989832043647766,
+  "shap_rel": 3.632614625851505,
+  "share": 0.0,
+  "n_margin": null,
+  "density": null,
+  "entropy": null,
+  "agreement": null,
+  "self": null,
+  "self_changes": null,
+  "shallow": null,
+  "deep": null,
+  "err_ratio": null,
+  "resid_corr": null,
+  "partners": null
+ },
+ "rows_all": {
+  "x1": 1,
+  "x2": 2,
+  "x3": 1,
+  "x4": 1,
+  "x5": 1,
+  "x6": 2,
+  "x7": 4
+ },
+ "share_after": 0.0,
+ "local_err_after": 0.21424432029065743,
+ "err_all_after": 0.025230396932169878
+}

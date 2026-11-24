@@ -1,0 +1,73 @@
+{
+ "scenario": "imbalance",
+ "task": "classification",
+ "rep": 4,
+ "real": false,
+ "signals": {
+  "ratio": 3.5827221870422363,
+  "density": 0.9027777777777778,
+  "disagreement": 0.09452283382415771,
+  "gbm": 0.8775286259372574,
+  "outlier_share": 0.0,
+  "prevalence": 0.10466666519641876,
+  "top_share": 0.8573177683268507,
+  "top_rel": 0.04094343422805557,
+  "top_feature": 1,
+  "shap_top": 0,
+  "root": 0,
+  "row": 1,
+  "shap_total": 0.568631311483216,
+  "err_slice": 0.24206791818141937,
+  "sign_agreement": 0.9847222222222223
+ },
+ "err": {
+  "none": 0.0634074074074074,
+  "ensemble": 0.06444444444444444,
+  "capacity": 0.07901234567901234,
+  "regularize": 0.07432098765432099,
+  "drop_top": 0.0528395061728395,
+  "threshold": 0.045037037037037035,
+  "class_weight": 0.044444444444444446,
+  "audit": 0.0634074074074074,
+  "more_data": 0.052345679012345686
+ },
+ "slicing": {
+  "lift_tree": 3.411696195602417,
+  "lift_cluster": 4.958796977996826,
+  "f1_tree": 0.24949698189134809,
+  "f1_cluster": 0.04092071611253197
+ },
+ "L1": {
+  "rec": "threshold",
+  "regret": 0.00934579439252331,
+  "hit": true
+ },
+ "L2": {
+  "rec": "threshold",
+  "regret": 0.00934579439252331,
+  "hit": true
+ },
+ "L3": {
+  "rec": "threshold",
+  "regret": 0.00934579439252331,
+  "hit": true
+ },
+ "resliced": true,
+ "signals_again": {
+  "ratio": 3.5827221870422363,
+  "density": 0.9027777777777778,
+  "disagreement": 0.09452283382415771,
+  "gbm": 0.8775286259372574,
+  "outlier_share": 0.0,
+  "prevalence": 0.10466666519641876,
+  "top_share": 0.8573177683268507,
+  "top_rel": 0.04094343422805557,
+  "top_feature": 1,
+  "shap_top": 0,
+  "root": 0,
+  "row": 1,
+  "shap_total": 0.568631311483216,
+  "err_slice": 0.24206791818141937,
+  "sign_agreement": 0.9847222222222223
+ }
+}

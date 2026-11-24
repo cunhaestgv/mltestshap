@@ -1,0 +1,42 @@
+{
+ "scenario": "noeffect",
+ "rep": 0,
+ "expected": 2,
+ "row": 2,
+ "diagnosis": "no real effect",
+ "correct": true,
+ "type": "wide",
+ "share_before": 0.9985714285714286,
+ "region_test": 1.0,
+ "err_all": 0.009837453987775054,
+ "local_err_before": 0.009837453987775054,
+ "scores": {
+  "lo": 0.000614567834418267,
+  "hi": 0.9994029998779297,
+  "shap_rel": 0.09730541583773579,
+  "share": 0.9985714285714286,
+  "n_margin": null,
+  "density": null,
+  "entropy": null,
+  "agreement": null,
+  "self": null,
+  "self_changes": null,
+  "shallow": null,
+  "deep": null,
+  "err_ratio": null,
+  "resid_corr": null,
+  "partners": null
+ },
+ "rows_all": {
+  "x1": 2,
+  "x2": 2,
+  "x3": 1,
+  "x4": 1,
+  "x5": 1,
+  "x6": 7,
+  "x7": 2
+ },
+ "share_after": null,
+ "local_err_after": 0.009128585168846499,
+ "err_all_after": 0.009128585168846499
+}

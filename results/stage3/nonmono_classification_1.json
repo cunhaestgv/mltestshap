@@ -1,0 +1,73 @@
+{
+ "scenario": "nonmono",
+ "task": "classification",
+ "rep": 1,
+ "real": false,
+ "signals": {
+  "ratio": 2.9990339279174805,
+  "density": 1.0778688524590165,
+  "disagreement": 0.12246168404817581,
+  "gbm": 0.8506320319870567,
+  "outlier_share": 0.0,
+  "prevalence": 0.4906666874885559,
+  "top_share": 0.9734662503052544,
+  "top_rel": 0.06409160011332057,
+  "top_feature": 6,
+  "shap_top": 0,
+  "root": 2,
+  "row": 4,
+  "shap_total": 0.5948904582007538,
+  "err_slice": 0.2859426736831665,
+  "sign_agreement": 0.9377049180327868
+ },
+ "err": {
+  "none": 0.035442281420765026,
+  "ensemble": 0.029222165300546447,
+  "capacity": 0.042797984972677595,
+  "regularize": 0.03319245218579235,
+  "drop_top": 0.0325165072859745,
+  "threshold": 0.0380464480874317,
+  "class_weight": 0.037746186247723135,
+  "audit": 0.035442281420765026,
+  "more_data": 0.023103085154826956
+ },
+ "slicing": {
+  "lift_tree": 2.641932249069214,
+  "lift_cluster": 4.157783031463623,
+  "f1_tree": 0.061269146608315096,
+  "f1_cluster": 0.1574074074074074
+ },
+ "L1": {
+  "rec": "audit",
+  "regret": 0.3481490403918735,
+  "hit": false
+ },
+ "L2": {
+  "rec": "audit",
+  "regret": 0.3481490403918735,
+  "hit": false
+ },
+ "L3": {
+  "rec": "capacity",
+  "regret": 0.55568939211435,
+  "hit": false
+ },
+ "resliced": true,
+ "signals_again": {
+  "ratio": 2.9990339279174805,
+  "density": 1.0778688524590165,
+  "disagreement": 0.12246168404817581,
+  "gbm": 0.8506320319870567,
+  "outlier_share": 0.0,
+  "prevalence": 0.4906666874885559,
+  "top_share": 0.9734662503052544,
+  "top_rel": 0.06409160011332057,
+  "top_feature": 6,
+  "shap_top": 0,
+  "root": 2,
+  "row": 4,
+  "shap_total": 0.5948904582007538,
+  "err_slice": 0.2859426736831665,
+  "sign_agreement": 0.9377049180327868
+ }
+}

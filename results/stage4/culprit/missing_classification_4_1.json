@@ -1,0 +1,21 @@
+{
+ "scenario": "missing",
+ "task": "classification",
+ "rep": 4,
+ "mult": 1.0,
+ "real": false,
+ "base": 0.09893333333333333,
+ "root": 1,
+ "shap_top": 0,
+ "rule": null,
+ "tried": {
+  "0": {
+   "disc_gain": -1.3773463472776521,
+   "test": 0.36177777777777775
+  },
+  "1": {
+   "disc_gain": -1.313719809959002,
+   "test": 0.3546666666666667
+  }
+ }
+}

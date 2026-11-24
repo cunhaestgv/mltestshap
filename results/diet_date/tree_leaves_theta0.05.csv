@@ -1,0 +1,7 @@
+feature,leaf,sign,entropy,samples,rule
+run_t-1,8,-1,0.0,29,weight_t-1 <= 0.5 and run_t-1 <= 0.5 and Weight_Kg_t > 0.3261 and Date_t-2 > 0.055
+run_t-1,12,1,0.0,18,weight_t-1 > 0.5 and run_t-1 <= 0.5 and calories_t-1 <= 0.3333
+run_t,4,-1,0.0,21,prot_t-2 <= 0.5 and five_donuts_t <= 0.5 and Weight_Kg_t-1 <= 0.5 and five_donuts_t-1 <= 0.5
+run_t,10,1,0.0,7,prot_t-2 <= 0.5 and five_donuts_t > 0.5 and Date_t <= 0.105
+run_t,13,1,0.0,5,prot_t-2 <= 0.5 and five_donuts_t > 0.5 and Date_t > 0.105 and run_t-2 > 0.5
+run_t,17,1,0.0,12,prot_t-2 > 0.5 and calories_t-2 <= 0.439 and Date_t-1 > 0.42
